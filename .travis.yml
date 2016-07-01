@@ -8,10 +8,10 @@ env:
 install:
   - pip install -r requirements.txt
   - pip install tox
-  - pip install coveralls
+  - pip install codeclimate-test-reporter
 
 script:
   - tox
 
 aftr_success:
-  - converalls
+  - codeclimate-test-reporter --token $CODE_CLIMATE
