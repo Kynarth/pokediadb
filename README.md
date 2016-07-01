@@ -6,6 +6,6 @@
 [![Issue Count](https://codeclimate.com/github/Kynarth/pokediadb/badges/issue_count.svg)](https://codeclimate.com/github/Kynarth/pokediadb)
 [![License MIT](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
-Command line interface to generate a sqlite database with data from pokeapi
-repository.
+Command line interface to generate a sqlite database with data from
+[pokeapi repository](https://github.com/PokeAPI/pokeapi).
 
