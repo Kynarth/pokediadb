@@ -1,0 +1,18 @@
+# pyc files
+__pycache__/
+
+# Setup files
+dist/
+build/
+*.egg-info/
+
+# Test files
+.tox/
+.coverage
+
+# Env files
+.env
+.env_leave
+
+# pytest
+.cache/
