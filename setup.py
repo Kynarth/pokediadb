@@ -45,7 +45,7 @@ setup(
     install_requires=dependencies,
     entry_points={
         'console_scripts': [
-            'pokediadb = pokediadb.cli:main',
+            'pokediadb = pokediadb.cli:pokediadb',
         ],
     },
     classifiers=[
