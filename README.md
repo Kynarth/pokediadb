@@ -1,9 +1,8 @@
 ## PokédiaDB
 
 [![Build Status](https://travis-ci.org/Kynarth/pokediadb.svg?branch=master)](https://travis-ci.org/Kynarth/pokediadb)
-[![Test Coverage](https://codeclimate.com/github/Kynarth/pokediadb/badges/coverage.svg)](https://codeclimate.com/github/Kynarth/pokediadb/coverage)
-[![Code Climate](https://codeclimate.com/github/Kynarth/pokediadb/badges/gpa.svg)](https://codeclimate.com/github/Kynarth/pokediadb)
-[![Issue Count](https://codeclimate.com/github/Kynarth/pokediadb/badges/issue_count.svg)](https://codeclimate.com/github/Kynarth/pokediadb)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9a0b4c75b1274f4893ef8135ef90f79f)](https://www.codacy.com/app/Kynarth/pokediadb?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Kynarth/pokediadb&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/9a0b4c75b1274f4893ef8135ef90f79f)](https://www.codacy.com/app/Kynarth/pokediadb?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Kynarth/pokediadb&amp;utm_campaign=Badge_Coverage)
 [![License MIT](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
 Command line interface to generate a sqlite database with data from

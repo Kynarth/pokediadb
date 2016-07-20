@@ -25,7 +25,8 @@ class CleanCommand(Command):
         )
         print("Cleaning done !")
 
-dependencies = ['click']
+
+DEPENDENCIES = ['click', 'colorama', 'peewee']
 
 setup(
     name='pokediadb',
@@ -42,7 +43,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     platforms='any',
-    install_requires=dependencies,
+    install_requires=DEPENDENCIES,
     entry_points={
         'console_scripts': [
             'pokediadb = pokediadb.cli:pokediadb',

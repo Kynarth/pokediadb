@@ -12,6 +12,8 @@ def runner():
 
 @pytest.yield_fixture(autouse=True)
 def tmp_context():
-    """Create an isolated file system for tests."""
+    """Create an isolated file system for tests with its test data."""
     with CliRunner().isolated_filesystem():
+        data_dir = local(local(__file__).dirname).join("data")
+        data_dir.copy(local("data").mkdir())
         yield local(".")

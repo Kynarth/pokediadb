@@ -1,0 +1,44 @@
+import pytest
+import peewee
+
+from pokediadb.enums import Lang
+from pokediadb.database import db_init
+from pokediadb.database import build_types
+
+
+def test_database_initialization_with_correct_path(tmp_context):
+    db_file = tmp_context.mkdir("database_test").join("pokemon.sql")
+    db, languages = db_init(db_file.strpath)
+    assert db.database == db_file.strpath
+
+    for lang in Lang.__members__.values():
+        assert lang in languages.keys()
+
+
+def test_database_initialization_with_incorrect_path(tmp_context):
+    directory = tmp_context.join("pokemon")
+    db_file = directory.join("wrong_file.sql")
+    assert directory.check(exists=0)
+
+    with pytest.raises(peewee.OperationalError) as err_info:
+        _, _ = db_init(str(db_file))
+    assert str(err_info.value) == "unable to open database file"
+
+
+def test_database_initialization_with_already_existing_file(tmp_context):
+    first_file = tmp_context.join("first.sql")
+    first_file.write("test")
+    assert first_file.check(file=1)
+
+    with pytest.raises(FileExistsError) as err_info:
+        _, _ = db_init(str(first_file))
+    assert str(err_info.value) == (
+        "The file '{}' already exists.".format(str(first_file))
+    )
+
+
+def test_pokemon_types_data_collection(tmp_context):
+    db_file = tmp_context.mkdir("database_test").join("pokemon.sql")
+    csv = tmp_context.join("data/csv")
+    db, languages = db_init(db_file.strpath)
+    build_types(db, languages, csv.strpath)

@@ -1,0 +1,7 @@
+type_id,local_language_id,name
+1,5,Normal
+1,9,Normal
+2,5,Combat
+2,9,Fighting
+3,5,Vol
+3,9,Flying
