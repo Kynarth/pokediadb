@@ -1,9 +1,11 @@
 import pytest
 import peewee
 
+from pokediadb import models
 from pokediadb.enums import Lang
 from pokediadb.database import db_init
 from pokediadb.database import build_types
+from pokediadb.database import build_abilities
 
 
 def test_database_initialization_with_correct_path(tmp_context):
@@ -42,3 +44,19 @@ def test_pokemon_types_data_collection(tmp_context):
     csv = tmp_context.join("data/csv")
     db, languages = db_init(db_file.strpath)
     build_types(db, languages, csv.strpath)
+
+    assert db_file.check(file=1)
+    assert len(models.Type.select()) == 3
+    assert len(models.TypeEfficacy.select()) == 9
+    assert len(models.TypeTranslation.select()) == 6
+
+
+def test_pokemon_abilities_data_collection(tmp_context):
+    db_file = tmp_context.mkdir("database_test").join("pokemon.sql")
+    csv = tmp_context.join("data/csv")
+    db, languages = db_init(db_file.strpath)
+    build_abilities(db, languages, csv.strpath)
+
+    assert db_file.check(file=1)
+    assert len(models.Ability.select()) == 8
+    assert len(models.AbilityTranslation.select()) == 16

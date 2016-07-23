@@ -1,7 +1,15 @@
 type_id,local_language_id,name
+1,3,노말
 1,5,Normal
 1,9,Normal
 2,5,Combat
+2,6,Kampf
 2,9,Fighting
 3,5,Vol
+3,7,Volador
 3,9,Flying
+10001,8,???
+10001,9,???
+10002,1,ダーク
+10002,5,Obscur
+10002,6,Crypto

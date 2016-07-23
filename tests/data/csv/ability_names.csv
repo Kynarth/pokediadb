@@ -1,0 +1,23 @@
+ability_id,local_language_id,name
+1,5,Puanteur
+1,6,Duftnote
+1,9,Stench
+2,5,Crachin
+2,9,Drizzle
+3,5,Turbo
+3,9,Speed Boost
+4,5,Armurbaston
+4,9,Battle Armor
+5,5,Fermeté
+5,9,Sturdy
+5,1,がんじょう
+6,5,Moiteur
+6,9,Damp
+7,5,Échauffement
+7,9,Limber
+8,5,Voile Sable
+8,7,Velo Arena
+8,9,Sand Veil
+10058,9,Shackle
+10059,9,Decoy
+10060,9,Shield

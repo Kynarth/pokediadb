@@ -11,8 +11,7 @@ from pathlib import Path
 import click
 
 from pokediadb import log
-from pokediadb.database import db_init
-from pokediadb.database import build_types
+from pokediadb import database as pdb
 
 
 def validate_dbname(ctx, params, value):
@@ -110,19 +109,23 @@ def download(path, verbose):
 def generate(ctx, path, name, verbose):
     dir_path = Path(path).absolute()
     file_path = dir_path / name
+    csv_path = dir_path / "csv"
 
     # Database initialization
     log.info("Initializating {}".format(name), verbose)
     try:
-        db, languages = db_init(str(file_path))
+        db, languages = pdb.db_init(str(file_path))
     except FileExistsError as err:
         log.error("{}".format(err))
         raise click.Abort()
 
     # Search for csv and sprites directories. If they are not in the provided
     # directory, they will be downloaded.
-    if not (dir_path / "csv").is_dir() or not (dir_path / "sprites").is_dir():
+    if not csv_path.is_dir() or not (dir_path / "sprites").is_dir():
         ctx.invoke(download, path=path, verbose=verbose)
 
-    log.info("Building types table...", verbose)
-    build_types(db, languages, dir_path / "csv")
+    log.info("Building types tables...", verbose)
+    pdb.build_types(db, languages, csv_path)
+
+    log.info("Building abilities tables...", verbose)
+    pdb.build_abilities(db, languages, csv_path)

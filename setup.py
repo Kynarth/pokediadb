@@ -1,8 +1,40 @@
 """
 CLI tool to generate a sqlite database with data from pokeapi repository.
 """
-import subprocess
+import shutil
 from setuptools import find_packages, setup, Command
+from setuptools.command.install import install
+
+
+def clean():
+    print("Cleaning build, dist and egg-info directories.")
+    try:
+        shutil.rmtree("build")
+    except FileNotFoundError:
+        pass
+
+    try:
+        shutil.rmtree("dist")
+    except FileNotFoundError:
+        pass
+
+    try:
+        shutil.rmtree("pokediadb.egg-info")
+    except FileNotFoundError:
+        pass
+
+    print("Cleaning done !")
+
+
+class InstallCommand(install):
+    """Custom install command that call clean command after installation."""
+    description = (
+        "Custom install command that call command clean after installation."
+    )
+
+    def run(self):
+        install.run(self)
+        clean()
 
 
 class CleanCommand(Command):
@@ -19,18 +51,14 @@ class CleanCommand(Command):
         pass
 
     def run(self):
-        print("Cleaning build, dist and egg-info directories.")
-        subprocess.call(
-            ['rm', '-r', 'build', 'dist', 'pokediadb.egg-info']
-        )
-        print("Cleaning done !")
+        clean()
 
 
 DEPENDENCIES = ['click', 'colorama', 'peewee']
 
 setup(
     name='pokediadb',
-    version='0.1.0',
+    version='0.2.0',
     url='https://github.com/kynarth/pokediadb',
     license='MIT',
     author='Kynarth Alseif',
@@ -63,5 +91,6 @@ setup(
     ],
     cmdclass={
         'clean': CleanCommand,
+        'install': InstallCommand,
     }
 )

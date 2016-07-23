@@ -1,4 +1,5 @@
 from peewee import Model
+from peewee import TextField
 from peewee import CharField
 from peewee import IntegerField
 from peewee import FixedCharField
@@ -32,8 +33,8 @@ class Pokemon(BaseModel):
 
 
 class PokemonTranslation(BaseModel):
-    pokemon_id = ForeignKeyField(Pokemon)
-    lang_id = ForeignKeyField(Language)
+    pokemon = ForeignKeyField(Pokemon)
+    lang = ForeignKeyField(Language)
     name = CharField(max_length=20)
 
 
@@ -57,6 +58,21 @@ class TypeSlot(BaseModel):
 
 
 class TypeTranslation(BaseModel):
-    type_id = ForeignKeyField(Type)
-    lang_id = ForeignKeyField(Language)
+    type = ForeignKeyField(Type)
+    lang = ForeignKeyField(Language)
     name = CharField(max_length=15)
+
+
+# =========================================================================== #
+#                               Ability models                                #
+# =========================================================================== #
+class Ability(BaseModel):
+    id = IntegerField(primary_key=True)
+    generation = IntegerField()
+
+
+class AbilityTranslation(BaseModel):
+    ability = ForeignKeyField(Ability)
+    lang = ForeignKeyField(Language)
+    name = CharField(max_length=20)
+    effect = TextField()
