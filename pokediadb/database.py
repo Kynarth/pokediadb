@@ -60,8 +60,8 @@ def build_types(pkm_db, languages, csv_dir):
 
     # Collect pokémon type generations
     pkm_types = []
-    with (csv_dir / "types.csv").open() as csv_file:
-        reader = csv.reader(csv_file)
+    with (csv_dir / "types.csv").open() as f_type:
+        reader = csv.reader(f_type)
         next(reader)  # Skip header
 
         for row in reader:
@@ -73,8 +73,8 @@ def build_types(pkm_db, languages, csv_dir):
 
     # Collect pokémon type efficacy
     pkm_type_eff = []
-    with (csv_dir / "type_efficacy.csv").open() as csv_file:
-        reader = csv.reader(csv_file)
+    with (csv_dir / "type_efficacy.csv").open() as f_type_eff:
+        reader = csv.reader(f_type_eff)
         next(reader)  # Skip header
 
         for row in reader:
@@ -86,8 +86,8 @@ def build_types(pkm_db, languages, csv_dir):
 
     # Collect pokémon type names in different languages
     pkm_type_names = []
-    with (csv_dir / "type_names.csv").open() as csv_file:
-        reader = csv.reader(csv_file)
+    with (csv_dir / "type_names.csv").open() as f_type_name:
+        reader = csv.reader(f_type_name)
         next(reader)  # Skip header
 
         for row in reader:
@@ -125,8 +125,8 @@ def build_abilities(pkm_db, languages, csv_dir):
 
     # Collect pokémon ability generations
     pkm_abilities = []
-    with (csv_dir / "abilities.csv").open() as csv_file:
-        reader = csv.reader(csv_file)
+    with (csv_dir / "abilities.csv").open() as f_ability:
+        reader = csv.reader(f_ability)
         next(reader)  # Skip header
 
         for row in reader:
@@ -140,35 +140,32 @@ def build_abilities(pkm_db, languages, csv_dir):
 
     # Collect pokémon ability names in different languages
     pkm_ability_trans = {}  # Contains all fields needing translations
-    with (csv_dir / "ability_names.csv").open() as csv_file:
-        reader = csv.reader(csv_file)
+    with (csv_dir / "ability_names.csv").open() as f_ab_name:
+        reader = csv.reader(f_ab_name)
         next(reader)  # Skip header
 
         for row in reader:
             # Skip weird types
-            ability_id = int(row[0])
-            if ability_id > 10000:
+            if int(row[0]) > 10000:
                 break
 
-            lang_id = int(row[1])
             # Key for pkm_abilities_trans dictionary
             data_id = "{}-{}".format(row[0], row[1])
-            if lang_id in languages:
+            if int(row[1]) in languages:
                 pkm_ability_trans[data_id] = {
-                    "ability": pkm_abilities[ability_id - 1]["id"],
+                    "ability": pkm_abilities[int(row[0]) - 1]["id"],
                     "lang": languages[int(row[1])],
                     "name": row[2]
                 }
 
     # Collect pokémon ability effect in different languages
-    with (csv_dir / "ability_flavor_text.csv").open() as csv_file:
-        reader = csv.reader(csv_file)
+    with (csv_dir / "ability_flavor_text.csv").open() as f_ab_eff:
+        reader = csv.reader(f_ab_eff)
         next(reader)  # Skip header
 
         for row in reader:
             # Skip older version since they are not complete
-            version_id = int(row[1])
-            if version_id != 16:
+            if int(row[1]) != 16:
                 continue
 
             lang_id = int(row[2])
