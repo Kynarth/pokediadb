@@ -179,185 +179,21 @@ brutti colpi."
 from critical hits."
 4,16,11,"相手の　攻撃が
 急所に　当たらない。"
-5,5,9,Negates 1-hit KO attacks.
-5,6,9,Negates 1-hit KO attacks.
-5,7,9,Negates 1-hit KO attacks.
-5,8,9,"The Pokémon is protected
-against 1-hit KO attacks."
-5,9,9,"The Pokémon is protected
-against 1-hit KO attacks."
-5,10,9,"It is protected against
-1-hit KO attacks."
-5,11,5,"Protège des capacités
-mettant K.O. en un coup."
-5,11,9,"It cannot be knocked
-out with one hit."
-5,14,9,"It cannot be knocked
-out with one hit."
-5,15,1,"いちげきで
-たおされない。"
-5,15,3,"일격으로
-쓰러지지 않는다."
-5,15,5,"Protège des capacités mettant
-K.O. en un coup."
-5,15,6,Bietet Schutz gegen K.O.-Treffer.
-5,15,7,"Evita que el rival pueda debilitarle
-de un solo golpe."
-5,15,8,"Evita che il Pokémon vada KO
-in un sol colpo."
-5,15,9,"It cannot be knocked
-out with one hit."
-5,15,11,"一撃で　倒されない。
-"
-5,16,1,"いちげきで
-たおされない。"
-5,16,3,"일격으로
-쓰러지지 않는다."
-5,16,5,"Protège des capacités mettant
-K.O. en un coup."
-5,16,6,Bietet Schutz gegen K.O.-Treffer.
-5,16,7,"Evita que el rival pueda debilitarle
-de un solo golpe."
-5,16,8,"Evita che il Pokémon vada KO
-in un sol colpo."
-5,16,9,"It cannot be knocked
-out with one hit."
-5,16,11,"一撃で　倒されない。
-"
-6,5,9,Prevents self-destruction.
-6,6,9,Prevents self-destruction.
-6,7,9,Prevents self-destruction.
-6,8,9,"Prevents combatants from
-self destructing."
-6,9,9,"Prevents combatants from
-self destructing."
-6,10,9,"Prevents combatants
-from self-destructing."
-6,11,5,"Empêche les combattants
-de s’autodétruire."
-6,11,9,"Prevents the use of
-self-destructing moves."
-6,14,9,"Prevents the use of
-self-destructing moves."
-6,15,1,"だれも　ばくはつが
-できなくなる。"
-6,15,3,"누구도 폭발
-할 수 없게 된다."
-6,15,5,"Empêche les combattants de
-s’autodétruire."
-6,15,6,"Hält alle Pokémon davon ab,
-zu explodieren."
-6,15,7,"Evita que un Pokémon pueda
-autodestruirse."
-6,15,8,"Impedisce le mosse
-autodistruttive."
-6,15,9,"Prevents the use of
-self-destructing moves."
-6,15,11,"だれも　爆発が
-できなくなる。"
-6,16,1,"だれも　ばくはつが
-できなくなる。"
-6,16,3,"누구도 폭발
-할 수 없게 된다."
-6,16,5,"Empêche les combattants de
-s’autodétruire."
-6,16,6,"Hält alle Pokémon davon ab,
-zu explodieren."
-6,16,7,"Evita que un Pokémon pueda
-autodestruirse."
-6,16,8,"Impedisce le mosse
-autodistruttive."
-6,16,9,"Prevents the use of
-self-destructing moves."
-6,16,11,"だれも　爆発が
-できなくなる。"
-7,5,9,Prevents paralysis.
-7,6,9,Prevents paralysis.
-7,7,9,Prevents paralysis.
-7,8,9,"The Pokémon is protected
-from paralysis."
-7,9,9,"The Pokémon is protected
-from paralysis."
-7,10,9,"The Pokémon is protected
-from paralysis."
-7,11,5,"Protège le Pokémon de
-la paralysie."
-7,11,9,"The Pokémon is protected
-from paralysis."
-7,14,9,"The Pokémon is protected
-from paralysis."
-7,15,1,"まひ　じょうたいに
-ならない。"
-7,15,3,"마비 상태가
-되지 않는다."
-7,15,5,"Protège le Pokémon de la
-paralysie."
-7,15,6,Verhindert Paralyse.
-7,15,7,Evita ser paralizado.
-7,15,8,"Il Pokémon è protetto contro
-la paralisi."
-7,15,9,"Protects the Pokémon
-from paralysis."
-7,15,11,"まひ状態に
-ならない。"
-7,16,1,"まひ　じょうたいに
-ならない。"
-7,16,3,"마비 상태가
-되지 않는다."
-7,16,5,"Protège le Pokémon de la
-paralysie."
-7,16,6,Verhindert Paralyse.
-7,16,7,Evita ser paralizado.
-7,16,8,"Il Pokémon è protetto contro
-la paralisi."
-7,16,9,"Protects the Pokémon
-from paralysis."
-7,16,11,"まひ状態に
-ならない。"
-8,5,9,Ups evasion in a sandstorm.
-8,6,9,Ups evasion in a sandstorm.
-8,7,9,Ups evasion in a sandstorm.
-8,8,9,"Boosts the Pokémon’s
-evasion in a sandstorm."
-8,9,9,"Boosts the Pokémon’s
-evasion in a sandstorm."
-8,10,9,"Boosts the Pokémon’s
-evasion in a sandstorm."
-8,11,5,"Augmente l’Esquive lors
-des tempêtes de sable."
-8,11,9,"Boosts the Pokémon’s
-evasion in a sandstorm."
-8,14,9,"Boosts the Pokémon’s
-evasion in a sandstorm."
-8,15,1,"すなあらしで
-かいひりつが　あがる。"
-8,15,3,"모래바람으로
-회피율이 올라간다."
-8,15,5,"Augmente l’Esquive lors des
-tempêtes de sable."
-8,15,6,"Erhöht in Sandstürmen
-den Fluchtwert."
-8,15,7,"Aumenta la Evasión en las
-tormentas de arena."
-8,15,8,"L’elusione aumenta durante
-le tempeste di sabbia."
-8,15,9,"Boosts the Pokémon’s
-evasion in a sandstorm."
-8,15,11,"砂あらしで
-回避率が　あがる。"
-8,16,1,"すなあらしで
-かいひりつが　あがる。"
-8,16,3,"모래바람으로
-회피율이 올라간다."
-8,16,5,"Augmente l’Esquive lors des
-tempêtes de sable."
-8,16,6,"Erhöht in Sandstürmen
-den Fluchtwert."
-8,16,7,"Aumenta la Evasión en las
-tormentas de arena."
-8,16,8,"L’elusione aumenta durante
-le tempeste di sabbia."
-8,16,9,"Boosts the Pokémon’s
-evasion in a sandstorm."
-8,16,11,"砂あらしで
-回避率が　あがる。"
+34,16,5,"Augmente la Vitesse du
+Pokémon s’il y a du soleil."
+65,16,11,"ピンチのとき　くさの
+威力が　あがる。"
+34,16,9,"Boosts the Pokémon’s
+Speed stat in sunshine."
+65,16,5,"Booste les capacités Plante en
+cas de besoin."
+65,16,9,"Powers up Grass-type moves
+when the Pokémon is in trouble."
+66,16,5,"Booste les capacités Feu en
+cas de besoin."
+66,16,9,"Powers up Fire-type moves when
+the Pokémon is in trouble."
+94,16,5,"Augmente l’Attaque Spéciale
+mais baisse les PV au soleil."
+94,16,9,"Boosts the Sp. Atk stat in sunny
+weather, but HP decreases."

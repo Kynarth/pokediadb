@@ -6,6 +6,7 @@ from pokediadb.enums import Lang
 from pokediadb.database import db_init
 from pokediadb.database import build_types
 from pokediadb.database import build_abilities
+from pokediadb.database import build_pokemons
 
 
 def test_database_initialization_with_correct_path(tmp_context):
@@ -60,3 +61,17 @@ def test_pokemon_abilities_data_collection(tmp_context):
     assert db_file.check(file=1)
     assert len(models.Ability.select()) == 8
     assert len(models.AbilityTranslation.select()) == 16
+
+
+def test_pokemon_data_collection(tmp_context):
+    db_file = tmp_context.mkdir("database_test").join("pokemon.sql")
+    csv = tmp_context.join("data/csv")
+    db, languages = db_init(db_file.strpath)
+
+    build_abilities(db, languages, csv.strpath)
+    build_pokemons(db, languages, csv.strpath)
+
+    assert db_file.check(file=1)
+    assert len(models.Pokemon.select()) == 6
+    assert len(models.PokemonAbility.select()) == 12
+    assert len(models.PokemonTranslation.select()) == 12

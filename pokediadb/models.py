@@ -1,6 +1,7 @@
 from peewee import Model
 from peewee import TextField
 from peewee import CharField
+from peewee import BooleanField
 from peewee import IntegerField
 from peewee import FixedCharField
 from peewee import SqliteDatabase
@@ -19,23 +20,6 @@ class BaseModel(Model):
 class Language(BaseModel):
     name = CharField(max_length=15)
     code = FixedCharField(max_length=2)
-
-
-# =========================================================================== #
-#                                Pokémon models                               #
-# =========================================================================== #
-class Pokemon(BaseModel):
-    id = IntegerField(primary_key=True)
-    xp = IntegerField()
-    height = IntegerField()
-    weight = IntegerField()
-    sprite = CharField(max_length=25)
-
-
-class PokemonTranslation(BaseModel):
-    pokemon = ForeignKeyField(Pokemon)
-    lang = ForeignKeyField(Language)
-    name = CharField(max_length=20)
 
 
 # =========================================================================== #
@@ -76,3 +60,29 @@ class AbilityTranslation(BaseModel):
     lang = ForeignKeyField(Language)
     name = CharField(max_length=20)
     effect = TextField()
+
+
+# =========================================================================== #
+#                                Pokémon models                               #
+# =========================================================================== #
+class Pokemon(BaseModel):
+    id = IntegerField(primary_key=True)
+    base_xp = IntegerField()
+    height = IntegerField()
+    weight = IntegerField()
+    national_id = IntegerField()
+    # sprite = CharField(max_length=25)
+
+
+class PokemonAbility(BaseModel):
+    pokemon = ForeignKeyField(Pokemon)
+    ability = ForeignKeyField(Ability)
+    hidden = BooleanField()
+    slot = IntegerField()
+
+
+class PokemonTranslation(BaseModel):
+    pokemon = ForeignKeyField(Pokemon)
+    lang = ForeignKeyField(Language)
+    name = CharField(max_length=20)
+    genus = CharField(max_length=20)
