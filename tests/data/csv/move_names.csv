@@ -1,0 +1,34 @@
+move_id,local_language_id,name
+1,5,Écras'Face
+1,9,Pound
+1,7,Destructor
+2,5,Poing-Karaté
+2,9,Karate Chop
+4,5,Poing Comète
+4,9,Comet Punch
+5,5,Ultimapoing
+5,9,Mega Punch
+5,6,Megahieb
+19,5,Vol
+19,9,Fly
+17,9,Wing Attack
+17,5,Cru-Aile
+17,1,つばさでうつ
+10001,1,ダークラッシュ
+10001,5,Charge Noire
+10001,6,Cryptoschlag
+10001,7,Carga Oscura
+10001,8,Ombroraffica
+10001,9,Shadow Rush
+10002,1,ダークブラスト
+10002,5,Aéro Noir
+10002,6,Cryptostrahl
+10002,7,Soplo Oscuro
+10002,8,Ombrolame
+10002,9,Shadow Blast
+10003,1,ダークアタック
+10003,5,Assaut Noir
+10003,6,Cryptoknall
+10003,7,Vigor Oscuro
+10003,8,Ombrattacco
+10003,9,Shadow Blitz

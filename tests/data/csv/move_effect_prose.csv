@@ -1,0 +1,10 @@
+move_effect_id,local_language_id,short_effect,effect
+1,9,Inflicts regular damage with no additional effect.,Inflicts [regular damage]{mechanic:regular-damage}.
+2,9,Puts the target to sleep.,Puts the target to [sleep]{mechanic:sleep}.
+4,9,Drains half the damage inflicted to heal the user.,Inflicts [regular damage]{mechanic:regular-damage}.  [Drains]{mechanic:drain} half the damage inflicted to heal the user.
+5,9,Has a $effect_chance% chance to [burn]{mechanic:burn} the target.,Inflicts [regular damage]{mechanic:regular-damage}.  Has a $effect_chance% chance to [burn]{mechanic:burn} the target.
+19,9,Lowers the target's Attack by one stage.,Lowers the target's [Attack]{mechanic:attack} by one [stage]{mechanic:stage}.
+17,9,Raises the user's evasion by one stage.,Raises the user's [evasion]{mechanic:evasion} by one [stage]{mechanic:stage}.
+10001,9,Has an increased chance for a critical hit in Hyper Mode.,Inflicts [regular damage]{mechanic:regular-damage}.  User's [critical hit]{mechanic:critical-hit} rate is one level higher when using this move while in [hyper mode]{mechanic:hyper-mode}.
+10002,9,User receives 1/2 its HP in recoil.,Inflicts [regular damage]{mechanic:regular-damage}.  User takes 1/2 of its current [HP]{mechanic:hp} in recoil.
+10003,9,Halves HP of all Pokémon on the field.  Must recharge,"Halves [HP]{mechanic:hp} of all Pokémon on the field.  User loses its next turn to ""recharge"", and cannot attack or [switch]{mechanic:switch} out during that turn."

@@ -1,6 +1,7 @@
 from peewee import Model
 from peewee import TextField
 from peewee import CharField
+from peewee import FloatField
 from peewee import BooleanField
 from peewee import IntegerField
 from peewee import FixedCharField
@@ -63,13 +64,34 @@ class AbilityTranslation(BaseModel):
 
 
 # =========================================================================== #
+#                                 Move models                                 #
+# =========================================================================== #
+class Move(BaseModel):
+    id = IntegerField(primary_key=True)
+    generation = IntegerField()
+    type = ForeignKeyField(Type)
+    power = IntegerField()
+    pp = IntegerField()
+    accuracy = IntegerField()
+    priority = IntegerField()
+    damage_class = CharField(max_length=10)
+
+
+class MoveTranslation(BaseModel):
+    move = ForeignKeyField(Move)
+    lang = ForeignKeyField(Language)
+    name = CharField(max_length=20)
+    effect = TextField(null=True)
+
+
+# =========================================================================== #
 #                                Pokémon models                               #
 # =========================================================================== #
 class Pokemon(BaseModel):
     id = IntegerField(primary_key=True)
     base_xp = IntegerField()
-    height = IntegerField()
-    weight = IntegerField()
+    height = FloatField()
+    weight = FloatField()
     national_id = IntegerField()
     # sprite = CharField(max_length=25)
 

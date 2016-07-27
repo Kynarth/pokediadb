@@ -7,6 +7,7 @@ from pokediadb.database import db_init
 from pokediadb.database import build_types
 from pokediadb.database import build_abilities
 from pokediadb.database import build_pokemons
+from pokediadb.database import build_moves
 
 
 def test_database_initialization_with_correct_path(tmp_context):
@@ -61,6 +62,22 @@ def test_pokemon_abilities_data_collection(tmp_context):
     assert db_file.check(file=1)
     assert len(models.Ability.select()) == 8
     assert len(models.AbilityTranslation.select()) == 16
+
+
+def test_moves_data_collection(tmp_context):
+    db_file = tmp_context.mkdir("database_test").join("pokemon.sql")
+    csv = tmp_context.join("data/csv")
+    db, languages = db_init(db_file.strpath)
+
+    build_types(db, languages, csv.strpath)
+    build_moves(db, languages, csv.strpath)
+
+    import subprocess
+    subprocess.run(["sqlitebrowser", db_file.strpath])
+
+    assert db_file.check(file=1)
+    assert len(models.Move.select()) == 6
+    assert len(models.MoveTranslation.select()) == 12
 
 
 def test_pokemon_data_collection(tmp_context):
