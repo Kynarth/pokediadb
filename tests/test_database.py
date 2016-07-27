@@ -72,9 +72,6 @@ def test_moves_data_collection(tmp_context):
     build_types(db, languages, csv.strpath)
     build_moves(db, languages, csv.strpath)
 
-    import subprocess
-    subprocess.run(["sqlitebrowser", db_file.strpath])
-
     assert db_file.check(file=1)
     assert len(models.Move.select()) == 6
     assert len(models.MoveTranslation.select()) == 12

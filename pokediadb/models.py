@@ -4,6 +4,7 @@ from peewee import CharField
 from peewee import FloatField
 from peewee import BooleanField
 from peewee import IntegerField
+from peewee import CompositeKey
 from peewee import FixedCharField
 from peewee import SqliteDatabase
 from peewee import ForeignKeyField
@@ -47,6 +48,9 @@ class TypeTranslation(BaseModel):
     lang = ForeignKeyField(Language)
     name = CharField(max_length=15)
 
+    class Meta:
+        primary_key = CompositeKey("type", "lang")
+
 
 # =========================================================================== #
 #                               Ability models                                #
@@ -61,6 +65,9 @@ class AbilityTranslation(BaseModel):
     lang = ForeignKeyField(Language)
     name = CharField(max_length=20)
     effect = TextField()
+
+    class Meta:
+        primary_key = CompositeKey("ability", "lang")
 
 
 # =========================================================================== #
@@ -82,6 +89,9 @@ class MoveTranslation(BaseModel):
     lang = ForeignKeyField(Language)
     name = CharField(max_length=20)
     effect = TextField(null=True)
+
+    class Meta:
+        primary_key = CompositeKey("move", "lang")
 
 
 # =========================================================================== #
@@ -108,3 +118,6 @@ class PokemonTranslation(BaseModel):
     lang = ForeignKeyField(Language)
     name = CharField(max_length=20)
     genus = CharField(max_length=20)
+
+    class Meta:
+        primary_key = CompositeKey("pokemon", "lang")
