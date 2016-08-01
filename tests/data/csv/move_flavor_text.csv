@@ -1,0 +1,409 @@
+move_id,version_group_id,language_id,flavor_text
+1,3,9,"Pounds with fore­
+legs or tail."
+1,4,9,"Pounds with fore­
+legs or tail."
+1,5,9,"Pounds the foe with
+forelegs or tail."
+1,6,9,"Pounds the foe with
+forelegs or tail."
+1,7,9,"A physical attack
+delivered with a
+long tail or a
+foreleg, etc."
+1,8,9,"The foe is physically
+pounded with a long
+tail or a foreleg,
+etc.
+"
+1,9,9,"The foe is physically
+pounded with a long
+tail or a foreleg,
+etc.
+"
+1,10,9,"The foe is physically
+pounded with a long
+tail or a foreleg,
+etc.
+"
+1,11,5,"Écrase l’ennemi avec les pattes
+avant, la queue, etc."
+1,11,9,"The target is physically pounded with
+a long tail or a foreleg, etc."
+1,14,9,"The target is physically pounded with
+a long tail or a foreleg, etc."
+1,15,1,"ながい　しっぽや　てなどを　つかって
+あいてを　はたいて　こうげきする。
+"
+1,15,3,"긴 꼬리나 손 등을 사용하여
+상대를 때려서 공격한다."
+1,15,5,"Écrase l’ennemi avec les pattes avant ou la queue,
+par exemple."
+1,15,6,Ein Hieb mit den Vorderbeinen oder dem Schweif.
+1,15,7,Golpea con las patas o la cola.
+1,15,8,"Colpisce il bersaglio con la coda o le zampe
+anteriori."
+1,15,9,"The target is physically pounded with
+a long tail, a foreleg, or the like."
+1,15,11,"長い　しっぽや　手などを　使って
+相手を　はたいて　攻撃する。
+"
+1,16,1,"ながい　しっぽや　てなどを　つかって
+あいてを　はたいて　こうげきする。
+"
+1,16,3,"긴 꼬리나 손 등을 사용하여
+상대를 때려서 공격한다."
+1,16,5,"Écrase l’ennemi avec les pattes avant ou la queue,
+par exemple."
+1,16,6,Ein Hieb mit den Vorderbeinen oder dem Schweif.
+1,16,7,Golpea con las patas o la cola.
+1,16,8,"Colpisce il bersaglio con la coda o le zampe
+anteriori."
+1,16,9,"The target is physically pounded with
+a long tail, a foreleg, or the like."
+1,16,11,"長い　しっぽや　手などを　使って
+相手を　はたいて　攻撃する。
+"
+2,3,9,"Has a high criti­
+cal hit ratio."
+2,4,9,"Has a high criti­
+cal hit ratio."
+2,5,9,"A chopping attack with a
+high critical-hit ratio."
+2,6,9,"A chopping attack with a
+high critical-hit ratio."
+2,7,9,"The foe is attacked
+with a sharp chop.
+It has a high
+critical-hit ratio."
+2,8,9,"The foe is attacked
+with a sharp chop.
+It has a high
+critical-hit ratio.
+"
+2,9,9,"The foe is attacked
+with a sharp chop.
+It has a high
+critical-hit ratio.
+"
+2,10,9,"The foe is attacked
+with a sharp chop.
+It has a high
+critical-hit ratio.
+"
+2,11,5,"L’ennemi est tranché violemment.
+Taux de critiques élevé."
+2,11,9,"The target is attacked with a sharp chop.
+Critical hits land more easily."
+2,14,9,"The target is attacked with a sharp chop.
+Critical hits land more easily."
+2,15,1,"するどい　チョップで
+あいてを　たたいて　こうげきする。
+きゅうしょに　あたりやすい。"
+2,15,3,"날카로운 당수로
+상대를 때려서 공격한다.
+급소에 맞기 쉽다."
+2,15,5,"L’ennemi est tranché violemment.
+Taux de critiques élevé."
+2,15,6,"Gute Möglichkeit, einen Volltreffer zu landen."
+2,15,7,Da un golpe cortante. Suele ser crítico.
+2,15,8,"Colpisce il bersaglio con un colpo netto.
+Probabile brutto colpo."
+2,15,9,"The target is attacked with a sharp chop.
+Critical hits land more easily."
+2,15,11,"鋭い　チョップで
+相手を　たたいて　攻撃する。
+急所に　当たりやすい。"
+2,16,1,"するどい　チョップで
+あいてを　たたいて　こうげきする。
+きゅうしょに　あたりやすい。"
+2,16,3,"날카로운 당수로
+상대를 때려서 공격한다.
+급소에 맞기 쉽다."
+2,16,5,"L’ennemi est tranché violemment.
+Taux de critiques élevé."
+2,16,6,"Gute Möglichkeit, einen Volltreffer zu landen."
+2,16,7,Da un golpe cortante. Suele ser crítico.
+2,16,8,"Colpisce il bersaglio con un colpo netto.
+Probabile brutto colpo."
+2,16,9,"The target is attacked with a sharp chop.
+Critical hits land more easily."
+2,16,11,"鋭い　チョップで
+相手を　たたいて　攻撃する。
+急所に　当たりやすい。"
+17,3,9,"Strikes the target
+with wings."
+17,4,9,"Strikes the target
+with wings."
+17,5,9,"Strikes the foe with wings
+spread wide."
+17,6,9,"Strikes the foe with wings
+spread wide."
+17,7,9,"The foe is struck
+with large, imposing
+wings spread wide."
+17,8,9,"The foe is struck
+with large, imposing
+wings spread wide
+to inflict damage.
+"
+17,9,9,"The foe is struck
+with large, imposing
+wings spread wide
+to inflict damage.
+"
+17,10,9,"The foe is struck
+with large, imposing
+wings spread wide
+to inflict damage.
+"
+17,11,5,"L’ennemi est frappé par de larges ailes
+déployées pour infliger des dégâts."
+17,11,9,"The target is struck with large, imposing
+wings spread wide to inflict damage."
+17,14,9,"The target is struck with large, imposing
+wings spread wide to inflict damage."
+17,15,1,"おおきく　ひろげた　りっぱな　つばさを
+あいてに　ぶつけて　こうげきする。
+"
+17,15,3,"크게 펼친 훌륭한 날개를
+상대에게 부딪쳐서 공격한다."
+17,15,5,"L’ennemi est frappé par de larges ailes déployées
+pour infliger des dégâts."
+17,15,6,Trifft das Ziel mit ausgebreiteten Flügeln.
+17,15,7,Golpea al objetivo con unas grandes alas.
+17,15,8,"Infligge danni al bersaglio spiegando delle grandi
+ali possenti."
+17,15,9,"The target is struck with large, imposing
+wings spread wide to inflict damage."
+17,15,11,"大きく　ひろげた　りっぱな　翼を
+相手に　ぶつけて　攻撃する。
+"
+17,16,1,"おおきく　ひろげた　りっぱな　つばさを
+あいてに　ぶつけて　こうげきする。
+"
+17,16,3,"크게 펼친 훌륭한 날개를
+상대에게 부딪쳐서 공격한다."
+17,16,5,"L’ennemi est frappé par de larges ailes déployées
+pour infliger des dégâts."
+17,16,6,Trifft das Ziel mit ausgebreiteten Flügeln.
+17,16,7,Golpea al objetivo con unas grandes alas.
+17,16,8,"Infligge danni al bersaglio spiegando delle grandi
+ali possenti."
+17,16,9,"The target is struck with large, imposing
+wings spread wide to inflict damage."
+17,16,11,"大きく　ひろげた　りっぱな　翼を
+相手に　ぶつけて　攻撃する。
+"
+5,3,9,"A powerful punch
+thrown very hard."
+5,4,9,"A powerful punch
+thrown very hard."
+5,5,9,"A strong punch thrown with
+incredible power."
+5,6,9,"A strong punch thrown with
+incredible power."
+5,7,9,"The foe is slugged
+by a punch thrown
+with muscle-packed
+power."
+5,8,9,"The foe is slugged
+by a punch thrown
+with muscle-packed
+power.
+"
+5,9,9,"The foe is slugged
+by a punch thrown
+with muscle-packed
+power.
+"
+5,10,9,"The foe is slugged
+by a punch thrown
+with muscle-packed
+power.
+"
+5,11,5,"L’ennemi reçoit un coup de poing
+d’une puissance incroyable."
+5,11,9,"The target is slugged by a punch thrown
+with muscle-packed power."
+5,14,9,"The target is slugged by a punch thrown
+with muscle-packed power."
+5,15,1,"ちからを　こめた　パンチで
+あいてを　こうげきする。
+"
+5,15,3,"힘을 담은 펀치로
+상대를 공격한다."
+5,15,5,"L’ennemi reçoit un coup de poing d’une puissance
+incroyable."
+5,15,6,Ein unglaublich kräftiger Hieb.
+5,15,7,Un puñetazo de gran potencia.
+5,15,8,Colpisce il bersaglio con un pugno poderoso.
+5,15,9,"The target is slugged by a punch thrown
+with muscle-packed power."
+5,15,11,"力を　こめた　パンチで
+相手を　攻撃する。
+"
+5,16,1,"ちからを　こめた　パンチで
+あいてを　こうげきする。
+"
+5,16,3,"힘을 담은 펀치로
+상대를 공격한다."
+5,16,5,"L’ennemi reçoit un coup de poing d’une puissance
+incroyable."
+5,16,6,Ein unglaublich kräftiger Hieb.
+5,16,7,Un puñetazo de gran potencia.
+5,16,8,Colpisce il bersaglio con un pugno poderoso.
+5,16,9,"The target is slugged by a punch thrown
+with muscle-packed power."
+5,16,11,"力を　こめた　パンチで
+相手を　攻撃する。
+"
+4,3,9,"Repeatedly punches
+2-5 times."
+4,4,9,"Repeatedly punches
+2-5 times."
+4,5,9,"Repeatedly punches the foe
+2 to 5 times."
+4,6,9,"Repeatedly punches the foe
+2 to 5 times."
+4,7,9,"The foe is hit with
+a flurry of punches
+that strike two to
+five times."
+4,8,9,"The foe is hit with
+a flurry of punches
+that strike two to
+five times in a row.
+"
+4,9,9,"The foe is hit with
+a flurry of punches
+that strike two to
+five times in a row.
+"
+4,10,9,"The foe is hit with
+a flurry of punches
+that strike two to
+five times in a row.
+"
+4,11,5,"Une tornade de coups de poing
+qui frappe de 2 à 5 fois d’affilée."
+4,11,9,"The target is hit with a flurry of punches
+that strike two to five times in a row."
+4,14,9,"The target is hit with a flurry of punches
+that strike two to five times in a row."
+4,15,1,"どとうの　パンチで
+あいてを　なぐりつけて　こうげきする。
+２ー５かいの　あいだ　れんぞくで　だす。"
+4,15,3,"노도 같은 펀치로
+상대를 세게 때려서 공격한다.
+2-5회 동안 연속으로 쓴다."
+4,15,5,"Une tornade de coups de poing qui frappe de
+deux à cinq fois d’affilée."
+4,15,6,"Trifft das Ziel zwei- bis fünfmal hintereinander
+mit kräftigen Hieben."
+4,15,7,Pega de dos a cinco veces seguidas.
+4,15,8,"Colpisce il bersaglio con una scarica di pugni
+da due a cinque volte di fila."
+4,15,9,"The target is hit with a flurry of punches
+that strike two to five times in a row."
+4,15,11,"どとうの　パンチで
+相手を　なぐりつけて　攻撃する。
+２ー５回の　あいだ　連続で　だす。"
+4,16,1,"どとうの　パンチで
+あいてを　なぐりつけて　こうげきする。
+２ー５かいの　あいだ　れんぞくで　だす。"
+4,16,3,"노도 같은 펀치로
+상대를 세게 때려서 공격한다.
+2-5회 동안 연속으로 쓴다."
+4,16,5,"Une tornade de coups de poing qui frappe de
+deux à cinq fois d’affilée."
+4,16,6,"Trifft das Ziel zwei- bis fünfmal hintereinander
+mit kräftigen Hieben."
+4,16,7,Pega de dos a cinco veces seguidas.
+4,16,8,"Colpisce il bersaglio con una scarica di pugni
+da due a cinque volte di fila."
+4,16,9,"The target is hit with a flurry of punches
+that strike two to five times in a row."
+4,16,11,"どとうの　パンチで
+相手を　なぐりつけて　攻撃する。
+２ー５回の　あいだ　連続で　だす。"
+19,3,9,"1st turn: Fly
+2nd turn: Attack"
+19,4,9,"1st turn: Fly
+2nd turn: Attack"
+19,5,9,"Flies up on the first turn,
+then strikes the next turn."
+19,6,9,"Flies up on the first turn,
+then strikes the next turn."
+19,7,9,"A 2-turn move that
+hits on the 2nd
+turn. Use it to fly
+to any known town."
+19,8,9,"The user soars, then
+strikes on the second
+turn. It can also be
+used for flying to
+any familiar town."
+19,9,9,"The user soars, then
+strikes on the second
+turn. It can also be
+used for flying to
+any familiar town."
+19,10,9,"The user soars, then
+strikes on the second
+turn. It can also be
+used for flying to
+any familiar town."
+19,11,5,"Le lanceur s’envole au 1er tour et
+frappe au 2è. Permet aussi de voler
+jusqu’à une ville déjà visitée."
+19,11,9,"The user soars, then strikes its target
+on the second turn. It can also be
+used for flying to any familiar town."
+19,14,9,"The user soars, then strikes its target
+on the second turn. It can also be
+used for flying to any familiar town."
+19,15,1,"１ターンめで　そらへ　とび
+２ターンめに　あいてを　こうげきする。
+しっている　まちに　とぶことも　できる。"
+19,15,3,"1턴째에 하늘을 날아
+2턴째에 상대를 공격한다.
+알고 있는 도시로 날아갈 수 있다."
+19,15,5,"Le lanceur s’envole au premier tour et frappe au
+second. Permet aussi de voler jusqu’à une ville
+déjà visitée."
+19,15,6,"Steigt in Runde 1 empor und trifft das Ziel in
+Runde 2. Ermöglicht Flug in jede bekannte Stadt."
+19,15,7,"Primer turno: vuela. Segundo turno: ataca. Fuera
+de combate, permite ir a sitios ya conocidos."
+19,15,8,"Chi la usa si alza in volo per attaccare al turno
+seguente. Fuori dalla lotta permette di volare
+in città già visitate."
+19,15,9,"The user soars and then strikes
+its target on the next turn. This can
+also be used to fly to any familiar town."
+19,15,11,"１ターン目で　空へ　飛び
+２ターン目に　相手を　攻撃する。
+知っている　街に　飛ぶことも　できる。"
+19,16,1,"１ターンめで　そらへ　とび
+２ターンめに　あいてを　こうげきする。
+しっている　まちに　とぶことも　できる。"
+19,16,3,"1턴째에 하늘을 날아
+2턴째에 상대를 공격한다.
+알고 있는 도시로 날아갈 수 있다."
+19,16,5,"Le lanceur s’envole au premier tour et frappe au
+second. Permet aussi de voler jusqu’à une ville
+déjà visitée."
+19,16,6,"Steigt in Runde 1 empor und trifft das Ziel in
+Runde 2. Ermöglicht Flug in jede bekannte Stadt."
+19,16,7,"Primer turno: vuela. Segundo turno: ataca. Fuera de 
+combate, permite ir a sitios ya conocidos."
+19,16,8,"Chi la usa si alza in volo per attaccare al turno
+seguente. Fuori dalla lotta permette di volare
+in città già visitate."
+19,16,9,"The user soars and then strikes
+its target on the next turn. This can
+also be used to fly to any familiar town."
+19,16,11,"１ターン目で　空へ　飛び
+２ターン目に　相手を　攻撃する。
+知っている　街に　飛ぶことも　できる。"

@@ -88,7 +88,7 @@ class MoveTranslation(BaseModel):
     move = ForeignKeyField(Move)
     lang = ForeignKeyField(Language)
     name = CharField(max_length=20)
-    effect = TextField(null=True)
+    effect = TextField()
 
     class Meta:
         primary_key = CompositeKey("move", "lang")

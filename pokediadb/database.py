@@ -236,22 +236,18 @@ def build_moves(pkm_db, languages, csv_dir):
                 data_id = "{}-{}".format(row[0], row[1])
                 move_trans[data_id] = {
                     "move": moves[int(row[0])]["id"],
-                    "lang": languages[int(row[1])], "name": row[2],
-                    "effect": "",
+                    "lang": languages[int(row[1])], "name": row[2]
                 }
 
     # Collect english moves effects
-    with (csv_dir / "move_effect_prose.csv").open() as f_move_eff:
+    with (csv_dir / "move_flavor_text.csv").open() as f_move_eff:
         reader = csv.reader(f_move_eff)
         next(reader)  # Skip header
 
         for row in reader:
-            # Skip weird moves
-            if int(row[0]) > 10000:
-                break
-
-            data_id = "{}-{}".format(row[0], row[1])
-            move_trans[data_id]["effect"] = row[2]
+            if row[1] == "16" and int(row[2]) in languages:
+                data_id = "{}-{}".format(row[0], row[2])
+                move_trans[data_id]["effect"] = row[3]
 
     # Insert all collected data in the database
     with pkm_db.atomic():
