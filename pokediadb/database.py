@@ -44,6 +44,56 @@ def db_init(path):
     return db, languages
 
 
+def build_versions(pkm_db, languages, csv_dir):
+    """Build the pokémon's version database with data from pokeapi's csv files.
+
+    Args:
+        pkm_db (pokedia.models.db): Pokediadb database.
+        languages (dict): Dictionary of supported languages.
+        csv_dir (str): Path to csv directory.
+
+    """
+    pkm_db.create_tables([models.Version, models.VersionTranslation])
+    csv_dir = Path(csv_dir).absolute()
+
+    # Collect pokémons types generations
+    versions = []
+    with (csv_dir / "versions.csv").open() as f_version:
+        reader = csv.reader(f_version)
+        next(reader)  # Skip header
+
+        for row in reader:
+            versions.append({"id": int(row[0]), "group": int(row[1])})
+
+    with (csv_dir / "version_groups.csv").open() as f_v_group:
+        reader = csv.reader(f_v_group)
+        next(reader)  # Skip header
+
+        for row in reader:
+            for version in versions:
+                if version.get("group", None) == int(row[0]):
+                    version["generation"] = int(row[2])
+                    del version["group"]
+
+    with (csv_dir / "version_names.csv").open() as f_v_name:
+        reader = csv.reader(f_v_name)
+        next(reader)  # Skip header
+
+        version_names = []
+        for row in reader:
+            if int(row[1]) in languages:
+                version = [v for v in versions if v["id"] == int(row[0])][0]
+                version_names.append({
+                    "version": version["id"], "lang": languages[int(row[1])],
+                    "name": row[2]
+                })
+
+    # Insert all collected data in the database
+    with pkm_db.atomic():
+        models.Version.insert_many(versions).execute()
+        models.VersionTranslation.insert_many(version_names).execute()
+
+
 def build_types(pkm_db, languages, csv_dir):
     """Build the pokémon's types database with data from pokeapi's csv files.
 

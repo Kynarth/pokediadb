@@ -25,6 +25,23 @@ class Language(BaseModel):
 
 
 # =========================================================================== #
+#                                Version models                               #
+# =========================================================================== #
+class Version(BaseModel):
+    id = IntegerField(primary_key=True)
+    generation = IntegerField()
+
+
+class VersionTranslation(BaseModel):
+    version = ForeignKeyField(Version)
+    lang = ForeignKeyField(Language)
+    name = CharField(max_length=30)
+
+    class Meta:
+        primary_key = CompositeKey("version", "lang")
+
+
+# =========================================================================== #
 #                                 Type models                                 #
 # =========================================================================== #
 class Type(BaseModel):
@@ -121,3 +138,8 @@ class PokemonTranslation(BaseModel):
 
     class Meta:
         primary_key = CompositeKey("pokemon", "lang")
+
+
+class PokemonMove(BaseModel):
+    pokemon = ForeignKeyField(Pokemon)
+    move = ForeignKeyField(Move)

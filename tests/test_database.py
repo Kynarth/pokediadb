@@ -8,6 +8,7 @@ from pokediadb.database import build_types
 from pokediadb.database import build_abilities
 from pokediadb.database import build_pokemons
 from pokediadb.database import build_moves
+from pokediadb.database import build_versions
 
 
 def test_database_initialization_with_correct_path(tmp_context):
@@ -39,6 +40,17 @@ def test_database_initialization_with_already_existing_file(tmp_context):
     assert str(err_info.value) == (
         "The file '{}' already exists.".format(str(first_file))
     )
+
+
+def test_pokemon_versions_data_collection(tmp_context):
+    db_file = tmp_context.mkdir("database_test").join("pokemon.sql")
+    csv = tmp_context.join("data/csv")
+    db, languages = db_init(db_file.strpath)
+    build_versions(db, languages, csv.strpath)
+
+    assert db_file.check(file=1)
+    assert len(models.Version.select()) == 26
+    assert len(models.VersionTranslation.select()) == 52
 
 
 def test_pokemon_types_data_collection(tmp_context):
