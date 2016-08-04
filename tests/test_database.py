@@ -5,10 +5,10 @@ from pokediadb import models
 from pokediadb.enums import Lang
 from pokediadb.database import db_init
 from pokediadb.database import build_types
+from pokediadb.database import build_versions
 from pokediadb.database import build_abilities
 from pokediadb.database import build_pokemons
 from pokediadb.database import build_moves
-from pokediadb.database import build_versions
 
 
 def test_database_initialization_with_correct_path(tmp_context):
