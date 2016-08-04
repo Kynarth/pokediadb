@@ -21,8 +21,8 @@ def max_sql_variables():
         args = [str(i) for i in range(guess)]
         try:
             cur.execute(query, args)
-        except sqlite3.OperationalError as e:
-            if "too many SQL variables" in str(e):
+        except sqlite3.OperationalError as err:
+            if "too many SQL variables" in str(err):
                 high = guess
             else:
                 return 999
