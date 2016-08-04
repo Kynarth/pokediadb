@@ -25,7 +25,7 @@ def max_sql_variables():
             if "too many SQL variables" in str(e):
                 high = guess
             else:
-                raise
+                return 999
         else:
             low = guess
 
