@@ -18,8 +18,9 @@ def get_types(csv_dir):
         next(reader)  # Skip header
 
         for row in reader:
-            # Skip weird types
             type_id = int(row[0])
+
+            # Skip shadow and unknown types
             if type_id > 10000:
                 break
 
@@ -74,12 +75,13 @@ def get_type_names(csv_dir, pkm_types, languages):
         next(reader)  # Skip header
 
         for row in reader:
-            # Skip weird types
             type_id = int(row[0])
+            lang_id = int(row[1])
+
+            # Skip shadow and unknown types
             if type_id > 10000:
                 break
 
-            lang_id = int(row[1])
             if lang_id in languages:
                 pkm_type_names.append({
                     "type": pkm_types[type_id]["id"],

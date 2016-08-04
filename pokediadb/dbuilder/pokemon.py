@@ -86,8 +86,8 @@ def get_pokemon_trans(csv_dir, pkms, languages):
 
     """
     pkm_trans = []
-    with (csv_dir / "pokemon_species_names.csv").open() as f_pkm_ab:
-        reader = csv.reader(f_pkm_ab)
+    with (csv_dir / "pokemon_species_names.csv").open() as f_pkm_trans:
+        reader = csv.reader(f_pkm_trans)
         next(reader)  # Skip header
 
         for row in reader:
