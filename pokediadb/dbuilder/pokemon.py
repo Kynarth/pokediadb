@@ -13,6 +13,9 @@ def get_pokemons(csv_dir):
         dict: Dict of dict containing infos to build
             pokediadb.models.Pokemon object.
 
+    Raises:
+        FileNotFoundError: Raised if pokemon.csv does not exist.
+
     """
     pkms = {}
     with (csv_dir / "pokemon.csv").open() as f_pkm:
@@ -47,6 +50,7 @@ def get_pokemon_abilities(csv_dir, pkms):
 
     Raises:
         peewee.OperationalError: Raised if ability tables haven't been build.
+        FileNotFoundError: Raised if pokemon_abilities.csv does not exist.
 
     """
     pkm_abilities = []
@@ -83,6 +87,9 @@ def get_pokemon_trans(csv_dir, pkms, languages):
     Returns:
         list: Dict containing infos to build
             pokediadb.models.PokmeonTranslation object.
+
+    Raises:
+        FileNotFoundError: Raised if pokemon_species_names.csv does not exist.
 
     """
     pkm_trans = []

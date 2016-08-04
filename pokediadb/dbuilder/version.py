@@ -11,6 +11,9 @@ def get_versions(csv_dir):
         list: List of dict containing infos to build
             pokediadb.models.Version object.
 
+    Raises:
+        FileNotFoundError: Raised if versions.csv does not exist.
+
     """
     pkm_versions = []
     with (csv_dir / "versions.csv").open() as f_version:
@@ -33,6 +36,9 @@ def get_version_groups(csv_dir, pkm_versions):
 
     Returns
         list: Returns the list of versions with generation information.
+
+    Raises:
+        FileNotFoundError: Raised if version_groups.csv does not exist.
 
     """
     with (csv_dir / "version_groups.csv").open() as f_v_group:
@@ -60,6 +66,9 @@ def get_version_names(csv_dir, pkm_versions, languages):
     Returns:
         list: List of dict containing infos to build
             pokediadb.models.VersionTranslation object.
+
+    Raises:
+        FileNotFoundError: Raised if version_names.csv does not exist.
 
     """
     with (csv_dir / "version_names.csv").open() as f_v_name:

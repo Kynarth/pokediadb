@@ -15,6 +15,7 @@ def get_moves(csv_dir):
 
     Raises:
         peewee.OperationalError: Raised if type tables haven't been build.
+        FileNotFoundError:: Raised if moves.csv does not exist.
 
     """
     pkm_moves = {}
@@ -54,6 +55,9 @@ def get_move_names(csv_dir, pkm_moves, languages):
         list: Dict containing infos to build
             pokediadb.models.MoveTranslation object.
 
+    Raises:
+        FileNotFoundError:: Raised if move_names.csv does not exist.
+
     """
     pkm_move_trans = {}
     with (csv_dir / "move_names.csv").open() as f_move_name:
@@ -86,6 +90,9 @@ def update_move_effects(csv_dir, pkm_move_trans, languages):
         pkm_move_trans (dict): Dict of dict containing
             infos about move that need translations.
         languages (dict): Dictionary of supported languages.
+
+    Raises:
+        FileNotFoundError: Raised if move_flavor_text.csv does not exist.
 
     """
     with (csv_dir / "move_flavor_text.csv").open() as f_move_eff:

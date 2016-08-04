@@ -11,6 +11,9 @@ def get_types(csv_dir):
         dict: Dict of dict containing infos to build
             pokediadb.models.Type object.
 
+    Raises:
+        FileNotFoundError: Raised if types.csv does not exist.
+
     """
     pkm_types = {}
     with (csv_dir / "types.csv").open() as f_type:
@@ -40,6 +43,9 @@ def get_type_efficacies(csv_dir, pkm_types):
         list: Dict containing infos to build
             pokediadb.models.TypeEfficacy object.
 
+    Raises:
+        FileNotFoundError: Raised if type_efficacy.csv does not exist.
+
     """
     pkm_type_eff = []
     with (csv_dir / "type_efficacy.csv").open() as f_type_eff:
@@ -67,6 +73,9 @@ def get_type_names(csv_dir, pkm_types, languages):
     Returns:
         list: Dict containing infos to build
             pokediadb.models.TypeTranslation object.
+
+    Raises:
+        FileNotFoundError: Raised if type_names.csv does not exist.
 
     """
     pkm_type_names = []

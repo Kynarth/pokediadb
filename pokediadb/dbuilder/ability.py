@@ -11,6 +11,9 @@ def get_abilities(csv_dir):
         dict: Dict of dict containing infos to build
             pokediadb.models.Ability object.
 
+    Raises:
+        FileNotFoundError: Raised if abilities.csv does not exist.
+
     """
     pkm_abilities = {}
     with (csv_dir / "abilities.csv").open() as f_ability:
@@ -41,6 +44,9 @@ def get_ability_names(csv_dir, pkm_abilities, languages):
     Returns:
         list: Dict containing infos to build
             pokediadb.models.AbilityTranslation object.
+
+    Raises:
+        FileNotFoundError: Raised if ability_names.csv does not exist.
 
     """
     pkm_ability_trans = {}  # Contains all fields needing translations
@@ -76,6 +82,9 @@ def update_ability_effects(csv_dir, pkm_ability_trans, languages):
         pkm_ability_trans (dict): Dict of dict containing
             infos about ability that need translations.
         languages (dict): Dictionary of supported languages.
+
+    Raises:
+        FileNotFoundError:: Raised if ability_flavor_text.csv does not exist.
 
     """
     with (csv_dir / "ability_flavor_text.csv").open() as f_ab_eff:
