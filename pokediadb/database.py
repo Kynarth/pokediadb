@@ -3,14 +3,36 @@
 import os
 from pathlib import Path
 
+import click
+
+from pokediadb import log
 from pokediadb import models
-from pokediadb.models import db
 from pokediadb.enums import Lang
 from pokediadb.models import Language
+from pokediadb.utils import max_sql_variables
+from pokediadb.models import db
 from pokediadb import dbuilder
 
 
-SQL_MAX_VARIABLE_NUMBER = 200
+SQLITE_LIMIT_VARIABLE_NUMBER = max_sql_variables()
+
+
+def get_max_size(data):
+    """Get the maximum of numbers rows from data to be used in one time.
+
+    Args:
+        data (list): List of dict containing infos to build a
+            pokediadb.models object.
+
+    Returns:
+        int: Max number of data's row.
+
+    """
+    if data:
+        return (SQLITE_LIMIT_VARIABLE_NUMBER // len(data[0])) - 1
+    else:
+        log.error("Provided an empty data list to get_max_size function.")
+        raise click.Abort()
 
 
 def db_init(path):
@@ -130,12 +152,12 @@ def build_abilities(pkm_db, languages, csv_dir):
 
     # Insert all collected data about abilities in the database
     with pkm_db.atomic():
-        data = list(pkm_ability_trans.values())
         models.Ability.insert_many(list(pkm_abilities.values())).execute()
-        for i in range(0, len(data), SQL_MAX_VARIABLE_NUMBER):
-            models.AbilityTranslation.insert_many(
-                data[i:i+SQL_MAX_VARIABLE_NUMBER]
-            ).execute()
+
+        data = list(pkm_ability_trans.values())
+        size = get_max_size(data)
+        for i in range(0, len(data), size):
+            models.AbilityTranslation.insert_many(data[i:i+size]).execute()
 
 
 # =========================================================================== #
@@ -162,10 +184,17 @@ def build_moves(pkm_db, languages, csv_dir):
 
     # Insert all collected data about moves in the database
     with pkm_db.atomic():
-        models.Move.insert_many(list(pkm_moves.values())).execute()
-        models.MoveTranslation.insert_many(
-            list(pkm_move_trans.values())
-        ).execute()
+        move_data = list(pkm_moves.values())
+        size = get_max_size(move_data)
+        for i in range(0, len(move_data), size):
+            models.Move.insert_many(move_data[i:i+size]).execute()
+
+        move_trans_data = list(pkm_move_trans.values())
+        size = get_max_size(move_trans_data)
+        for i in range(0, len(move_data), size):
+            models.MoveTranslation.insert_many(
+                move_trans_data[i:i+size]
+            ).execute()
 
 
 # =========================================================================== #
@@ -195,6 +224,19 @@ def build_pokemons(pkm_db, languages, csv_dir):
 
     # Insert all collected data about pokémons in the database
     with pkm_db.atomic():
-        models.Pokemon.insert_many(list(pkms.values())).execute()
-        models.PokemonAbility.insert_many(pkm_abilities).execute()
-        models.PokemonTranslation.insert_many(pkm_trans).execute()
+        pkm_data = list(pkms.values())
+        size = get_max_size(pkm_data)
+        for i in range(0, len(pkm_data), size):
+            models.Pokemon.insert_many(pkm_data[i:i+size]).execute()
+
+        size = get_max_size(pkm_abilities)
+        for i in range(0, len(pkm_abilities), size):
+            models.PokemonAbility.insert_many(
+                pkm_abilities[i:i+size]
+            ).execute()
+
+        size = get_max_size(pkm_trans)
+        for i in range(0, len(pkm_trans), size):
+            models.PokemonTranslation.insert_many(
+                pkm_trans[i:i+size]
+            ).execute()

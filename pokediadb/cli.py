@@ -124,8 +124,17 @@ def generate(ctx, path, name, verbose):
     if not csv_path.is_dir() or not (dir_path / "sprites").is_dir():
         ctx.invoke(download, path=path, verbose=verbose)
 
+    log.info("Building versions tables...", verbose)
+    pdb.build_versions(db, languages, csv_path)
+
     log.info("Building types tables...", verbose)
     pdb.build_types(db, languages, csv_path)
 
     log.info("Building abilities tables...", verbose)
     pdb.build_abilities(db, languages, csv_path)
+
+    log.info("Building moves tables...", verbose)
+    pdb.build_moves(db, languages, csv_path)
+
+    log.info("Building pokemons tables...", verbose)
+    pdb.build_pokemons(db, languages, csv_path)

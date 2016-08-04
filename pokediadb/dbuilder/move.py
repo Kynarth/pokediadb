@@ -1,5 +1,8 @@
 import csv
 
+import click
+
+from pokediadb import log
 from pokediadb import models
 
 
@@ -15,7 +18,7 @@ def get_moves(csv_dir):
 
     Raises:
         peewee.OperationalError: Raised if type tables haven't been build.
-        FileNotFoundError:: Raised if moves.csv does not exist.
+        FileNotFoundError: Raised if moves.csv does not exist.
 
     """
     pkm_moves = {}
@@ -30,15 +33,27 @@ def get_moves(csv_dir):
             if move_id > 10000:
                 break
 
-            pkm_moves[move_id] = {
-                "id": move_id, "generation": int(row[2]),
-                "type": models.Type.get(
-                    models.Type.id == int(row[3])
-                ),
-                "power": int(row[4]), "pp": int(row[5]),
-                "accuracy": int(row[6]), "priority": int(row[7]),
-                "damage_class": row[9]
-            }
+            power = int(row[4]) if row[4] != "" else 0
+            pp = int(row[5]) if row[5] != "" else 0
+            accuracy = int(row[6]) if row[6] != "" else 0
+
+            try:
+                pkm_moves[move_id] = {
+                    "id": move_id, "generation": int(row[2]),
+                    "type": models.Type.get(
+                        models.Type.id == int(row[3])
+                    ),
+                    "power": power, "pp": pp,
+                    "accuracy": accuracy, "priority": int(row[7]),
+                    "damage_class": row[9]
+                }
+            except ValueError as err:
+                log.error((
+                    "An error occured while reading moves.csv"
+                    "Row: {}".format(row)
+                ))
+                log.error(str(err))
+                raise click.Abort()
 
     return pkm_moves
 
@@ -56,7 +71,7 @@ def get_move_names(csv_dir, pkm_moves, languages):
             pokediadb.models.MoveTranslation object.
 
     Raises:
-        FileNotFoundError:: Raised if move_names.csv does not exist.
+        FileNotFoundError: Raised if move_names.csv does not exist.
 
     """
     pkm_move_trans = {}
