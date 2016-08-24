@@ -25,6 +25,8 @@ def max_sql_variables():
             if "too many SQL variables" in str(err):
                 high = guess
             else:
+                cur.close()
+                db.close()
                 return 999
         else:
             low = guess
