@@ -1,11 +1,10 @@
 id,identifier,generation_id,is_main_series
 1,stench,3,1
-2,drizzle,3,1
-3,speed-boost,3,1
-4,battle-armor,3,1
 34,chlorophyll,3,1
+94,solar-power,4,1
+159,sand-force,5,1
+170,magician,6,1
 65,overgrow,3,1
 66,blaze,3,1
-94,solar-power,4,1
 10059,decoy,5,0
 10060,shield,5,0

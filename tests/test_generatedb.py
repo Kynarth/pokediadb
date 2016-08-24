@@ -1,4 +1,5 @@
 from peewee import SqliteDatabase
+from py.path import local
 
 from pokediadb import log
 from pokediadb.cli import pokediadb
@@ -48,13 +49,13 @@ def test_database_generation_with_invalid_path(runner):
 
 
 def test_database_generation_with_existent_sql_file(runner, tmp_context):
-    sql_file = tmp_context.join("pokediadb.sql")
-    sql_file.write("test")
+    sql_file = local("pokediadb.sql")
+    tmp_context.join("data/test_data.sql").copy(sql_file)
     result = runner.invoke(pokediadb, ["generate", "-v"])
-    print(result.output)
     assert result.exit_code == 1
     assert log.error(
-        "The file '{}' already exists".format(sql_file)) in result.output
+        "The database '{}' already exist.".format(sql_file.strpath)
+    ) in result.output
 
 
 def test_database_generation_with_invalid_names(runner):

@@ -58,7 +58,7 @@ DEPENDENCIES = ['click', 'colorama', 'peewee']
 
 setup(
     name='pokediadb',
-    version='0.2.0',
+    version='0.3.0',
     url='https://github.com/kynarth/pokediadb',
     license='MIT',
     author='Kynarth Alseif',

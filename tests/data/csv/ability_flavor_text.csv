@@ -46,154 +46,218 @@ fa tentennare i nemici."
 the target to flinch."
 1,16,11,"臭くて　相手が
 ひるむ　ことがある。"
-2,5,9,Summons rain in battle.
-2,6,9,Summons rain in battle.
-2,7,9,Summons rain in battle.
-2,8,9,"The Pokémon makes it rain
-if it appears in battle."
-2,9,9,"The Pokémon makes it rain
-if it appears in battle."
-2,10,9,"The Pokémon makes it rain
-if it appears in battle."
-2,11,5,"Le Pokémon invoque la pluie
-quand il entre au combat."
-2,11,9,"The Pokémon makes it rain
-if it appears in battle."
-2,14,9,"The Pokémon makes it rain
-if it appears in battle."
-2,15,1,"せんとうに　でると
-あめを　ふらす。"
-2,15,3,"배틀에 나가면
-비를 내린다."
-2,15,5,"Le Pokémon invoque la pluie
-quand il entre au combat."
-2,15,6,Ruft im Kampf Regen herbei.
-2,15,7,"Hace que llueva cuando entra en
-combate."
-2,15,8,"Quando scende in campo,
-il Pokémon attira la pioggia."
-2,15,9,"The Pokémon makes it rain
-when it enters a battle."
-2,15,11,"戦闘に　でると
-雨を　降らす。"
-2,16,1,"せんとうに　でると
-あめを　ふらす。"
-2,16,3,"배틀에 나가면
-비를 내린다."
-2,16,5,"Le Pokémon invoque la pluie
-quand il entre au combat."
-2,16,6,Ruft im Kampf Regen herbei.
-2,16,7,"Hace que llueva cuando entra en
-combate."
-2,16,8,"Quando scende in campo,
-il Pokémon attira la pioggia."
-2,16,9,"The Pokémon makes it rain
-when it enters a battle."
-2,16,11,"戦闘に　でると
-雨を　降らす。"
-3,5,9,Gradually boosts SPEED.
-3,6,9,Gradually boosts SPEED.
-3,7,9,Gradually boosts SPEED.
-3,8,9,"The Pokémon’s Speed stat
-is gradually boosted."
-3,9,9,"The Pokémon’s Speed stat
-is gradually boosted."
-3,10,9,"Its Speed stat is
-gradually boosted."
-3,11,5,"La Vitesse du Pokémon
-augmente progressivement."
-3,11,9,"Its Speed stat is
-gradually boosted."
-3,14,9,"Its Speed stat is
-gradually boosted."
-3,15,1,"ちょっとずつ
-すばやく　なっていく。"
-3,15,3,"조금씩
-스피드가 높아진다."
-3,15,5,"La Vitesse du Pokémon
-augmente progressivement."
-3,15,6,Erhöht Initiative nach und nach.
-3,15,7,"Aumenta la Velocidad
-gradualmente."
-3,15,8,"La statistica Velocità aumenta
-gradualmente."
-3,15,9,"Its Speed stat is
-gradually boosted."
-3,15,11,"ちょっとずつ
-素早く　なっていく。"
-3,16,1,"ちょっとずつ
-すばやく　なっていく。"
-3,16,3,"조금씩
-스피드가 높아진다."
-3,16,5,"La Vitesse du Pokémon
-augmente progressivement."
-3,16,6,Erhöht Initiative nach und nach.
-3,16,7,"Aumenta la Velocidad
-gradualmente."
-3,16,8,"La statistica Velocità aumenta
-gradualmente."
-3,16,9,"Its Speed stat is
-gradually boosted."
-3,16,11,"ちょっとずつ
-素早く　なっていく。"
-4,5,9,Blocks critical hits.
-4,6,9,Blocks critical hits.
-4,7,9,Blocks critical hits.
-4,8,9,"The Pokémon is protected
-against critical hits."
-4,9,9,"The Pokémon is protected
-against critical hits."
-4,10,9,"The Pokémon is protected
-against critical hits."
-4,11,5,"Le Pokémon est protégé
-des coups critiques."
-4,11,9,"The Pokémon is protected
-against critical hits."
-4,14,9,"The Pokémon is protected
-against critical hits."
-4,15,1,"あいての　こうげきが
-きゅうしょに　あたらない。"
-4,15,3,"상대의 공격이
-급소에 맞지 않는다."
-4,15,5,"Le Pokémon est protégé des
-coups critiques."
-4,15,6,Wehrt gegnerische Volltreffer ab.
-4,15,7,Bloquea golpes críticos.
-4,15,8,"Evita che il Pokémon subisca
-brutti colpi."
-4,15,9,"Protects the Pokémon
-from critical hits."
-4,15,11,"相手の　攻撃が
-急所に　当たらない。"
-4,16,1,"あいての　こうげきが
-きゅうしょに　あたらない。"
-4,16,3,"상대의 공격이
-급소에 맞지 않는다."
-4,16,5,"Le Pokémon est protégé des
-coups critiques."
-4,16,6,Wehrt gegnerische Volltreffer ab.
-4,16,7,Bloquea los golpes críticos.
-4,16,8,"Evita che il Pokémon subisca
-brutti colpi."
-4,16,9,"Protects the Pokémon
-from critical hits."
-4,16,11,"相手の　攻撃が
-急所に　当たらない。"
+34,5,9,Raises SPEED in sunshine.
+34,6,9,Raises SPEED in sunshine.
+34,7,9,Raises SPEED in sunshine.
+34,8,9,"Boosts the Pokémon’s
+Speed in sunshine."
+34,9,9,"Boosts the Pokémon’s
+Speed in sunshine."
+34,10,9,"Boosts the Pokémon’s
+Speed in sunshine."
+34,11,5,"Augmente la Vitesse du
+Pokémon s’il y a du soleil."
+34,11,9,"Boosts the Pokémon’s
+Speed in sunshine."
+34,14,9,"Boosts the Pokémon’s
+Speed in sunshine."
+34,15,1,"はれのとき　すばやさが
+あがる。"
+34,15,3,"맑을 때 스피드가
+올라간다."
+34,15,5,"Augmente la Vitesse du
+Pokémon s’il y a du soleil."
+34,15,6,"Steigert bei Sonnenschein
+die Initiative."
+34,15,7,"Sube la Velocidad cuando hay
+sol."
+34,15,8,"Se c’è il sole, la statistica
+Velocità aumenta."
+34,15,9,"Boosts the Pokémon’s
+Speed stat in sunshine."
+34,15,11,"晴れのとき　素早さが
+あがる。"
+34,16,1,"はれのとき　すばやさが
+あがる。"
+34,16,3,"맑을 때 스피드가
+올라간다."
 34,16,5,"Augmente la Vitesse du
 Pokémon s’il y a du soleil."
-65,16,11,"ピンチのとき　くさの
-威力が　あがる。"
+34,16,6,"Steigert bei Sonnenschein
+die Initiative."
+34,16,7,"Sube la Velocidad cuando hay
+sol."
+34,16,8,"Se c’è il sole, la statistica
+Velocità aumenta."
 34,16,9,"Boosts the Pokémon’s
 Speed stat in sunshine."
-65,16,5,"Booste les capacités Plante en
-cas de besoin."
-65,16,9,"Powers up Grass-type moves
-when the Pokémon is in trouble."
-66,16,5,"Booste les capacités Feu en
-cas de besoin."
-66,16,9,"Powers up Fire-type moves when
-the Pokémon is in trouble."
+34,16,11,"晴れのとき　素早さが
+あがる。"
 94,16,5,"Augmente l’Attaque Spéciale
 mais baisse les PV au soleil."
 94,16,9,"Boosts the Sp. Atk stat in sunny
 weather, but HP decreases."
+159,11,5,"Renforce des capacités en
+cas de tempête de sable."
+159,11,9,"Boosts certain moves’
+power in a sandstorm."
+159,14,9,"Boosts certain moves’
+power in a sandstorm."
+159,15,1,"すなあらしで　いりょくが
+あがる　わざがある。"
+159,15,3,"모래바람으로 위력이
+올라가는 기술이 있다."
+159,15,5,"Renforce des capacités en cas
+de tempête de sable."
+159,15,6,"Manche Attacken wirken
+in Sandstürmen besser."
+159,15,7,"Potencia algunos movimientos
+durante las tormentas de arena."
+159,15,8,"Potenzia alcune mosse nelle
+tempeste di sabbia."
+159,15,9,"Boosts certain moves’
+power in a sandstorm."
+159,15,11,"砂あらしで　威力が
+あがる　技がある。"
+159,16,1,"すなあらしで　いりょくが
+あがる　わざがある。"
+159,16,3,"모래바람으로 위력이
+올라가는 기술이 있다."
+159,16,5,"Renforce des capacités en cas
+de tempête de sable."
+159,16,6,"Manche Attacken wirken
+in Sandstürmen besser."
+159,16,7,"Potencia algunos movimientos
+durante las tormentas de arena."
+159,16,8,"Potenzia alcune mosse nelle
+tempeste di sabbia."
+159,16,9,"Boosts certain moves’
+power in a sandstorm."
+159,16,11,"砂あらしで　威力が
+あがる　技がある。"
+170,15,1,"わざを　あてた　あいての
+どうぐを　うばってしまう。"
+170,15,3,"기술을 맞은 상대의
+도구를 빼앗아 버린다."
+170,15,5,"Les capacités volent aussi l’objet
+tenu par la cible."
+170,15,6,"Stiehlt Items von Pokémon, die
+durch Attacken getroffen wurden."
+170,15,7,"Roba el objeto del Pokémon al
+que alcance con un movimiento."
+170,15,8,"Ruba lo strumento del Pokémon
+su cui è stata usata una mossa."
+170,15,9,"The Pokémon steals the held item
+of a Pokémon it hits with a move."
+170,15,11,"技を　当てた　相手の
+道具を　奪ってしまう。"
+170,16,1,"わざを　あてた　あいての
+どうぐを　うばってしまう。"
+170,16,3,"기술을 맞은 상대의
+도구를 빼앗아 버린다."
+170,16,5,"Les capacités volent aussi l’objet
+tenu par la cible."
+170,16,6,"Stiehlt Items von Pokémon, die
+durch Attacken getroffen wurden."
+170,16,7,"Roba el objeto del Pokémon al
+que alcance con un movimiento."
+170,16,8,"Ruba lo strumento del Pokémon
+su cui è stata usata una mossa."
+170,16,9,"The Pokémon steals the held item
+of a Pokémon it hits with a move."
+170,16,11,"技を　当てた　相手の
+道具を　奪ってしまう。"
+65,5,9,Ups GRASS moves in a pinch.
+65,6,9,Ups GRASS moves in a pinch.
+65,7,9,Ups GRASS moves in a pinch.
+65,8,9,"Powers up Grass-type
+moves in a pinch."
+65,9,9,"Powers up Grass-type
+moves in a pinch."
+65,10,9,"Powers up Grass-type
+moves in a pinch."
+65,11,5,"Booste les capacités
+Plante en cas de besoin."
+65,11,9,"Powers up Grass-type
+moves in a pinch."
+65,14,9,"Powers up Grass-type
+moves in a pinch."
+65,15,1,"ピンチのとき　くさの
+いりょくが　あがる。"
+65,15,3,"위급할 때 풀타입의
+위력이 올라간다."
+65,15,5,"Booste les capacités Plante en
+cas de besoin."
+65,15,6,"Erhöht in Notfällen die Stärke
+von Pflanzen-Attacken."
+65,15,7,"Potencia los ataques de tipo
+Planta en un apuro."
+65,15,8,"Quando si è in difficoltà, potenzia
+le mosse di tipo Erba."
+65,15,9,"Powers up Grass-type moves
+when the Pokémon is in trouble."
+65,15,11,"ピンチのとき　くさの
+威力が　あがる。"
+65,16,1,"ピンチのとき　くさの
+いりょくが　あがる。"
+65,16,3,"위급할 때 풀타입의
+위력이 올라간다."
+65,16,5,"Booste les capacités Plante en
+cas de besoin."
+65,16,6,"Erhöht in Notfällen die Stärke
+von Pflanzen-Attacken."
+65,16,7,"Potencia los ataques de tipo
+Planta en un apuro."
+65,16,8,"Quando si è in difficoltà, potenzia  
+le mosse di tipo Erba."
+65,16,9,"Powers up Grass-type moves
+when the Pokémon is in trouble."
+65,16,11,"ピンチのとき　くさの
+威力が　あがる。"
+66,5,9,Ups FIRE moves in a pinch.
+66,6,9,Ups FIRE moves in a pinch.
+66,7,9,Ups FIRE moves in a pinch.
+66,8,9,"Powers up Fire-type
+moves in a pinch."
+66,9,9,"Powers up Fire-type
+moves in a pinch."
+66,10,9,"Powers up Fire-type
+moves in a pinch."
+66,11,5,"Booste les capacités
+Feu en cas de besoin."
+66,11,9,"Powers up Fire-type
+moves in a pinch."
+66,14,9,"Powers up Fire-type
+moves in a pinch."
+66,15,1,"ピンチのとき　ほのおの
+いりょくが　あがる。"
+66,15,3,"위급할 때 불꽃타입의
+위력이 올라간다."
+66,15,5,"Booste les capacités Feu en
+cas de besoin."
+66,15,6,"Erhöht in Notfällen die Stärke
+von Feuer-Attacken."
+66,15,7,"Potencia los ataques de tipo
+Fuego en un apuro."
+66,15,8,"Quando si è in difficoltà, potenzia
+le mosse di tipo Fuoco."
+66,15,9,"Powers up Fire-type moves when
+the Pokémon is in trouble."
+66,15,11,"ピンチのとき　ほのおの
+威力が　あがる。"
+66,16,1,"ピンチのとき　ほのおの
+いりょくが　あがる。"
+66,16,3,"위급할 때 불꽃타입의
+위력이 올라간다."
+66,16,5,"Booste les capacités Feu en
+cas de besoin."
+66,16,6,"Erhöht in Notfällen die Stärke
+von Feuer-Attacken."
+66,16,7,"Potencia los ataques de tipo
+Fuego en un apuro."
+66,16,8,"Quando si è in difficoltà, potenzia  
+le mosse di tipo Fuoco."
+66,16,9,"Powers up Fire-type moves when
+the Pokémon is in trouble."
+66,16,11,"ピンチのとき　ほのおの
+威力が　あがる。"

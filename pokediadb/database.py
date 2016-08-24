@@ -8,9 +8,7 @@ import click
 from pokediadb import log
 from pokediadb import models
 from pokediadb.enums import Lang
-from pokediadb.models import Language
 from pokediadb.utils import max_sql_variables
-from pokediadb.models import db
 from pokediadb import dbuilder
 
 
@@ -46,24 +44,35 @@ def db_init(path):
         dict: Dictionary with Language instances.
 
     Raises:
-        FileExistsError: Raised if the path argument indicates an existing
-            file.
+        FileExistsError: Raised if the database already exist.
+        peewee.OperationalError: Raised if languages or DamageClass tables
+            already exists or they objects already exist.
 
     """
     # Check if there is a preexisting database
     if os.path.isfile(path):
-        raise FileExistsError("The file '{}' already exists.".format(path))
+        msg = "The database '{}' already exist.".format(path)
+        raise FileExistsError(msg)
 
     # Connection and creation and initialization of Language table
-    db.init(path)
-    db.connect()
-    db.create_table(Language)
+    models.db.init(path)
+    models.db.connect()
+    models.db.create_tables([models.Language, models.DamageClass], safe=True)
+
+    # Create languages
     languages = {
-        Lang.fr: Language.create(code="fr", name="Français"),
-        Lang.en: Language.create(code="en", name="English"),
+        Lang.fr: models.Language.get_or_create(code="fr", name="Français")[0],
+        Lang.en: models.Language.get_or_create(code="en", name="English")[0],
     }
 
-    return db, languages
+    # Create damage class
+    models.DamageClass.get_or_create(id=1, name="Status", image="status.png")
+    models.DamageClass.get_or_create(
+        id=2, name="Physical", image="physical.png"
+    )
+    models.DamageClass.get_or_create(id=3, name="Special", image="special.png")
+
+    return models.db, languages
 
 
 # =========================================================================== #

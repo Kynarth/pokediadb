@@ -64,346 +64,397 @@ a long tail, a foreleg, or the like."
 1,16,11,"長い　しっぽや　手などを　使って
 相手を　はたいて　攻撃する。
 "
-2,3,9,"Has a high criti­
-cal hit ratio."
-2,4,9,"Has a high criti­
-cal hit ratio."
-2,5,9,"A chopping attack with a
-high critical-hit ratio."
-2,6,9,"A chopping attack with a
-high critical-hit ratio."
-2,7,9,"The foe is attacked
-with a sharp chop.
-It has a high
-critical-hit ratio."
-2,8,9,"The foe is attacked
-with a sharp chop.
-It has a high
-critical-hit ratio.
-"
-2,9,9,"The foe is attacked
-with a sharp chop.
-It has a high
-critical-hit ratio.
-"
-2,10,9,"The foe is attacked
-with a sharp chop.
-It has a high
-critical-hit ratio.
-"
-2,11,5,"L’ennemi est tranché violemment.
-Taux de critiques élevé."
-2,11,9,"The target is attacked with a sharp chop.
-Critical hits land more easily."
-2,14,9,"The target is attacked with a sharp chop.
-Critical hits land more easily."
-2,15,1,"するどい　チョップで
-あいてを　たたいて　こうげきする。
-きゅうしょに　あたりやすい。"
-2,15,3,"날카로운 당수로
-상대를 때려서 공격한다.
-급소에 맞기 쉽다."
-2,15,5,"L’ennemi est tranché violemment.
-Taux de critiques élevé."
-2,15,6,"Gute Möglichkeit, einen Volltreffer zu landen."
-2,15,7,Da un golpe cortante. Suele ser crítico.
-2,15,8,"Colpisce il bersaglio con un colpo netto.
-Probabile brutto colpo."
-2,15,9,"The target is attacked with a sharp chop.
-Critical hits land more easily."
-2,15,11,"鋭い　チョップで
-相手を　たたいて　攻撃する。
-急所に　当たりやすい。"
-2,16,1,"するどい　チョップで
-あいてを　たたいて　こうげきする。
-きゅうしょに　あたりやすい。"
-2,16,3,"날카로운 당수로
-상대를 때려서 공격한다.
-급소에 맞기 쉽다."
-2,16,5,"L’ennemi est tranché violemment.
-Taux de critiques élevé."
-2,16,6,"Gute Möglichkeit, einen Volltreffer zu landen."
-2,16,7,Da un golpe cortante. Suele ser crítico.
-2,16,8,"Colpisce il bersaglio con un colpo netto.
-Probabile brutto colpo."
-2,16,9,"The target is attacked with a sharp chop.
-Critical hits land more easily."
-2,16,11,"鋭い　チョップで
-相手を　たたいて　攻撃する。
-急所に　当たりやすい。"
-17,3,9,"Strikes the target
-with wings."
-17,4,9,"Strikes the target
-with wings."
-17,5,9,"Strikes the foe with wings
-spread wide."
-17,6,9,"Strikes the foe with wings
-spread wide."
-17,7,9,"The foe is struck
-with large, imposing
-wings spread wide."
-17,8,9,"The foe is struck
-with large, imposing
-wings spread wide
-to inflict damage.
-"
-17,9,9,"The foe is struck
-with large, imposing
-wings spread wide
-to inflict damage.
-"
-17,10,9,"The foe is struck
-with large, imposing
-wings spread wide
-to inflict damage.
-"
-17,11,5,"L’ennemi est frappé par de larges ailes
-déployées pour infliger des dégâts."
-17,11,9,"The target is struck with large, imposing
-wings spread wide to inflict damage."
-17,14,9,"The target is struck with large, imposing
-wings spread wide to inflict damage."
-17,15,1,"おおきく　ひろげた　りっぱな　つばさを
-あいてに　ぶつけて　こうげきする。
-"
-17,15,3,"크게 펼친 훌륭한 날개를
-상대에게 부딪쳐서 공격한다."
-17,15,5,"L’ennemi est frappé par de larges ailes déployées
-pour infliger des dégâts."
-17,15,6,Trifft das Ziel mit ausgebreiteten Flügeln.
-17,15,7,Golpea al objetivo con unas grandes alas.
-17,15,8,"Infligge danni al bersaglio spiegando delle grandi
-ali possenti."
-17,15,9,"The target is struck with large, imposing
-wings spread wide to inflict damage."
-17,15,11,"大きく　ひろげた　りっぱな　翼を
-相手に　ぶつけて　攻撃する。
-"
-17,16,1,"おおきく　ひろげた　りっぱな　つばさを
-あいてに　ぶつけて　こうげきする。
-"
-17,16,3,"크게 펼친 훌륭한 날개를
-상대에게 부딪쳐서 공격한다."
-17,16,5,"L’ennemi est frappé par de larges ailes déployées
-pour infliger des dégâts."
-17,16,6,Trifft das Ziel mit ausgebreiteten Flügeln.
-17,16,7,Golpea al objetivo con unas grandes alas.
-17,16,8,"Infligge danni al bersaglio spiegando delle grandi
-ali possenti."
-17,16,9,"The target is struck with large, imposing
-wings spread wide to inflict damage."
-17,16,11,"大きく　ひろげた　りっぱな　翼を
-相手に　ぶつけて　攻撃する。
-"
-5,3,9,"A powerful punch
-thrown very hard."
-5,4,9,"A powerful punch
-thrown very hard."
-5,5,9,"A strong punch thrown with
-incredible power."
-5,6,9,"A strong punch thrown with
-incredible power."
-5,7,9,"The foe is slugged
-by a punch thrown
-with muscle-packed
-power."
-5,8,9,"The foe is slugged
-by a punch thrown
-with muscle-packed
-power.
-"
-5,9,9,"The foe is slugged
-by a punch thrown
-with muscle-packed
-power.
-"
-5,10,9,"The foe is slugged
-by a punch thrown
-with muscle-packed
-power.
-"
-5,11,5,"L’ennemi reçoit un coup de poing
-d’une puissance incroyable."
-5,11,9,"The target is slugged by a punch thrown
-with muscle-packed power."
-5,14,9,"The target is slugged by a punch thrown
-with muscle-packed power."
-5,15,1,"ちからを　こめた　パンチで
-あいてを　こうげきする。
-"
-5,15,3,"힘을 담은 펀치로
-상대를 공격한다."
-5,15,5,"L’ennemi reçoit un coup de poing d’une puissance
-incroyable."
-5,15,6,Ein unglaublich kräftiger Hieb.
-5,15,7,Un puñetazo de gran potencia.
-5,15,8,Colpisce il bersaglio con un pugno poderoso.
-5,15,9,"The target is slugged by a punch thrown
-with muscle-packed power."
-5,15,11,"力を　こめた　パンチで
+218,3,9,"An attack based on
+lack of loyalty."
+218,4,9,"An attack based on
+lack of loyalty."
+218,5,9,"An attack that is stronger
+if the TRAINER is disliked."
+218,6,9,"An attack that is stronger
+if the TRAINER is disliked."
+218,7,9,"This attack move
+grows more powerful
+the less the user
+likes its TRAINER."
+218,8,9,"A full-power attack
+that grows more
+powerful the less
+the user likes its
+Trainer."
+218,9,9,"A full-power attack
+that grows more
+powerful the less
+the user likes its
+Trainer."
+218,10,9,"A full-power attack
+that grows more
+powerful the less
+the user likes its
+Trainer."
+218,11,5,"Moins le Pokémon aime son Dresseur, plus
+cette attaque est puissante."
+218,11,9,"A full-power attack that grows more
+powerful the less the user likes
+its Trainer."
+218,14,9,"A full-power attack that grows more
+powerful the less the user likes
+its Trainer."
+218,15,1,"ふまんを　はらすため　ぜんりょくで
+あいてを　こうげきする。なついて
+いないほど　いりょくは　あがる。"
+218,15,3,"불만을 풀기 위해 전력으로
+상대를 공격한다.
+친밀하지 않을수록 위력이 올라간다."
+218,15,5,"Moins le Pokémon aime son Dresseur, plus cette
+attaque est puissante."
+218,15,6,"Die Attacke wird stärker, je weniger der Anwender
+seinen Trainer mag."
+218,15,7,"Cuanto menor sea la amistad con el Entrenador,
+más poderoso será este ataque."
+218,15,8,"Mossa che diventa tanto più potente quanto
+minore è il grado di affezione del Pokémon
+per il proprio Allenatore."
+218,15,9,"A full-power attack that grows more
+powerful the less the user likes
+its Trainer."
+218,15,11,"不満を　はらすため　全力で
 相手を　攻撃する。
-"
-5,16,1,"ちからを　こめた　パンチで
-あいてを　こうげきする。
-"
-5,16,3,"힘을 담은 펀치로
-상대를 공격한다."
-5,16,5,"L’ennemi reçoit un coup de poing d’une puissance
-incroyable."
-5,16,6,Ein unglaublich kräftiger Hieb.
-5,16,7,Un puñetazo de gran potencia.
-5,16,8,Colpisce il bersaglio con un pugno poderoso.
-5,16,9,"The target is slugged by a punch thrown
-with muscle-packed power."
-5,16,11,"力を　こめた　パンチで
+なついていないほど　威力は　あがる。"
+218,16,1,"ふまんを　はらすため　ぜんりょくで
+あいてを　こうげきする。なついて
+いないほど　いりょくは　あがる。"
+218,16,3,"불만을 풀기 위해 전력으로
+상대를 공격한다.
+친밀하지 않을수록 위력이 올라간다."
+218,16,5,"Moins le Pokémon aime son Dresseur, plus cette
+attaque est puissante."
+218,16,6,"Die Attacke wird stärker, je weniger der Anwender
+seinen Trainer mag."
+218,16,7,"Cuanto menor sea la amistad con el Entrenador, más 
+poderoso será este ataque."
+218,16,8,"Mossa che diventa tanto più potente quanto
+minore è il grado di affezione del Pokémon
+per il proprio Allenatore."
+218,16,9,"A full-power attack that grows more
+powerful the less the user likes
+its Trainer."
+218,16,11,"不満を　はらすため　全力で
 相手を　攻撃する。
+なついていないほど　威力は　あがる。"
+287,5,9,"Heals poisoning, paralysis,
+or a burn."
+287,6,9,"Heals poisoning, paralysis,
+or a burn."
+287,7,9,"A self-healing move
+that cures the user
+of a poisoning,
+burn, or paralysis."
+287,8,9,"The user rests
+to cure itself of a
+poisoning, burn, or
+paralysis.
 "
-4,3,9,"Repeatedly punches
-2-5 times."
-4,4,9,"Repeatedly punches
-2-5 times."
-4,5,9,"Repeatedly punches the foe
-2 to 5 times."
-4,6,9,"Repeatedly punches the foe
-2 to 5 times."
-4,7,9,"The foe is hit with
-a flurry of punches
-that strike two to
-five times."
-4,8,9,"The foe is hit with
-a flurry of punches
-that strike two to
-five times in a row.
+287,9,9,"The user rests
+to cure itself of a
+poisoning, burn, or
+paralysis.
 "
-4,9,9,"The foe is hit with
-a flurry of punches
-that strike two to
-five times in a row.
+287,10,9,"The user rests
+to cure itself of a
+poisoning, burn, or
+paralysis.
 "
-4,10,9,"The foe is hit with
-a flurry of punches
-that strike two to
-five times in a row.
-"
-4,11,5,"Une tornade de coups de poing
-qui frappe de 2 à 5 fois d’affilée."
-4,11,9,"The target is hit with a flurry of punches
-that strike two to five times in a row."
-4,14,9,"The target is hit with a flurry of punches
-that strike two to five times in a row."
-4,15,1,"どとうの　パンチで
-あいてを　なぐりつけて　こうげきする。
-２ー５かいの　あいだ　れんぞくで　だす。"
-4,15,3,"노도 같은 펀치로
-상대를 세게 때려서 공격한다.
-2-5회 동안 연속으로 쓴다."
-4,15,5,"Une tornade de coups de poing qui frappe de
-deux à cinq fois d’affilée."
-4,15,6,"Trifft das Ziel zwei- bis fünfmal hintereinander
-mit kräftigen Hieben."
-4,15,7,Pega de dos a cinco veces seguidas.
-4,15,8,"Colpisce il bersaglio con una scarica di pugni
-da due a cinque volte di fila."
-4,15,9,"The target is hit with a flurry of punches
-that strike two to five times in a row."
-4,15,11,"どとうの　パンチで
-相手を　なぐりつけて　攻撃する。
-２ー５回の　あいだ　連続で　だす。"
-4,16,1,"どとうの　パンチで
-あいてを　なぐりつけて　こうげきする。
-２ー５かいの　あいだ　れんぞくで　だす。"
-4,16,3,"노도 같은 펀치로
-상대를 세게 때려서 공격한다.
-2-5회 동안 연속으로 쓴다."
-4,16,5,"Une tornade de coups de poing qui frappe de
-deux à cinq fois d’affilée."
-4,16,6,"Trifft das Ziel zwei- bis fünfmal hintereinander
-mit kräftigen Hieben."
-4,16,7,Pega de dos a cinco veces seguidas.
-4,16,8,"Colpisce il bersaglio con una scarica di pugni
-da due a cinque volte di fila."
-4,16,9,"The target is hit with a flurry of punches
-that strike two to five times in a row."
-4,16,11,"どとうの　パンチで
-相手を　なぐりつけて　攻撃する。
-２ー５回の　あいだ　連続で　だす。"
-19,3,9,"1st turn: Fly
-2nd turn: Attack"
-19,4,9,"1st turn: Fly
-2nd turn: Attack"
-19,5,9,"Flies up on the first turn,
-then strikes the next turn."
-19,6,9,"Flies up on the first turn,
-then strikes the next turn."
-19,7,9,"A 2-turn move that
-hits on the 2nd
-turn. Use it to fly
-to any known town."
-19,8,9,"The user soars, then
-strikes on the second
-turn. It can also be
-used for flying to
-any familiar town."
-19,9,9,"The user soars, then
-strikes on the second
-turn. It can also be
-used for flying to
-any familiar town."
-19,10,9,"The user soars, then
-strikes on the second
-turn. It can also be
-used for flying to
-any familiar town."
-19,11,5,"Le lanceur s’envole au 1er tour et
-frappe au 2è. Permet aussi de voler
-jusqu’à une ville déjà visitée."
-19,11,9,"The user soars, then strikes its target
-on the second turn. It can also be
-used for flying to any familiar town."
-19,14,9,"The user soars, then strikes its target
-on the second turn. It can also be
-used for flying to any familiar town."
-19,15,1,"１ターンめで　そらへ　とび
-２ターンめに　あいてを　こうげきする。
-しっている　まちに　とぶことも　できる。"
-19,15,3,"1턴째에 하늘을 날아
-2턴째에 상대를 공격한다.
-알고 있는 도시로 날아갈 수 있다."
-19,15,5,"Le lanceur s’envole au premier tour et frappe au
-second. Permet aussi de voler jusqu’à une ville
-déjà visitée."
-19,15,6,"Steigt in Runde 1 empor und trifft das Ziel in
-Runde 2. Ermöglicht Flug in jede bekannte Stadt."
-19,15,7,"Primer turno: vuela. Segundo turno: ataca. Fuera
-de combate, permite ir a sitios ya conocidos."
-19,15,8,"Chi la usa si alza in volo per attaccare al turno
-seguente. Fuori dalla lotta permette di volare
-in città già visitate."
-19,15,9,"The user soars and then strikes
-its target on the next turn. This can
-also be used to fly to any familiar town."
-19,15,11,"１ターン目で　空へ　飛び
-２ターン目に　相手を　攻撃する。
-知っている　街に　飛ぶことも　できる。"
-19,16,1,"１ターンめで　そらへ　とび
-２ターンめに　あいてを　こうげきする。
-しっている　まちに　とぶことも　できる。"
-19,16,3,"1턴째에 하늘을 날아
-2턴째에 상대를 공격한다.
-알고 있는 도시로 날아갈 수 있다."
-19,16,5,"Le lanceur s’envole au premier tour et frappe au
-second. Permet aussi de voler jusqu’à une ville
-déjà visitée."
-19,16,6,"Steigt in Runde 1 empor und trifft das Ziel in
-Runde 2. Ermöglicht Flug in jede bekannte Stadt."
-19,16,7,"Primer turno: vuela. Segundo turno: ataca. Fuera de 
-combate, permite ir a sitios ya conocidos."
-19,16,8,"Chi la usa si alza in volo per attaccare al turno
-seguente. Fuori dalla lotta permette di volare
-in città già visitate."
-19,16,9,"The user soars and then strikes
-its target on the next turn. This can
-also be used to fly to any familiar town."
-19,16,11,"１ターン目で　空へ　飛び
-２ターン目に　相手を　攻撃する。
-知っている　街に　飛ぶことも　できる。"
+287,11,5,"Le lanceur se repose pour guérir
+d’un empoisonnement, d’une brûlure
+ou d’une paralysie."
+287,11,9,"The user rests to cure itself of a
+poisoning, burn, or paralysis."
+287,14,9,"The user rests to cure itself of a
+poisoning, burn, or paralysis."
+287,15,1,"からだを　やすめて　じぶんが　おっている
+どく　まひ　やけどの
+じょうたい　いじょうを　なおす。"
+287,15,3,"몸을 쉬게 하여 자신이 입은
+독, 마비, 화상의
+상태 이상을 치료한다."
+287,15,5,"Le lanceur se repose pour guérir d’un
+empoisonnement, d’une brûlure ou d’une
+paralysie."
+287,15,6,"Selbstheilung bei Vergiftung,
+Paralyse und Verbrennung."
+287,15,7,"Descansa para curar parálisis, envenenamiento o
+quemaduras."
+287,15,8,"Chi la usa riposa per guarire da avvelenamento,
+paralisi e scottatura."
+287,15,9,"The user rests to cure itself of a
+poisoning, burn, or paralysis."
+287,15,11,"体を　やすめて　自分が　おっている
+毒　まひ　やけどの
+状態異常を　治す。"
+287,16,1,"からだを　やすめて　じぶんが　おっている
+どく　まひ　やけどの
+じょうたい　いじょうを　なおす。"
+287,16,3,"몸을 쉬게 하여 자신이 입은
+독, 마비, 화상의
+상태 이상을 치료한다."
+287,16,5,"Le lanceur se repose pour guérir d’un
+empoisonnement, d’une brûlure ou d’une
+paralysie."
+287,16,6,"Selbstheilung bei Vergiftung,
+Paralyse und Verbrennung."
+287,16,7,"Descansa para curar parálisis, envenenamiento o 
+quemaduras."
+287,16,8,"Chi la usa riposa per guarire da avvelenamento,
+paralisi e scottatura."
+287,16,9,"The user rests to cure itself of a
+poisoning, burn, or paralysis."
+287,16,11,"体を　やすめて　自分が　おっている
+毒　まひ　やけどの
+状態異常を　治す。"
+370,8,9,"The user fights the
+foe in close without
+guarding itself. It
+also cuts the user’s
+Defense and Sp. Def."
+370,9,9,"The user fights the
+foe in close without
+guarding itself. It
+also cuts the user’s
+Defense and Sp. Def."
+370,10,9,"The user fights the
+foe up close without
+guarding itself. It
+also cuts the user’s
+Defense and Sp. Def."
+370,11,5,"Le lanceur combat au corps à corps sans
+se protéger. Baisse aussi sa Défense et
+sa Défense Spéciale."
+370,11,9,"The user fights the target up close
+without guarding itself. It also cuts
+the user’s Defense and Sp. Def."
+370,14,9,"The user fights the target up close
+without guarding itself. It also cuts
+the user’s Defense and Sp. Def."
+370,15,1,"まもりを　すてて　あいての　ふところに
+とつげきする。じぶんの
+ぼうぎょと　とくぼうが　さがる。"
+370,15,3,"방어를 포기하고 상대 깊숙이
+돌격한다. 자신의
+방어와 특수방어가 떨어진다."
+370,15,5,"Le lanceur combat au corps à corps sans se
+protéger. Baisse aussi sa Défense et sa Défense
+Spéciale."
+370,15,6,"Nahkampf-Attacke ohne Rücksicht auf Verluste.
+Senkt Verteidigung und Spezial-Verteidigung
+des Anwenders."
+370,15,7,"Lucha abiertamente contra el objetivo sin
+protegerse. También reduce la Defensa y la
+Defensa Especial del usuario."
+370,15,8,"Chi la usa attacca abbassando la guardia.
+La propria Difesa e la Difesa Speciale si riducono."
+370,15,9,"The user fights the target up close
+without guarding itself. This also lowers
+the user’s Defense and Sp. Def stats."
+370,15,11,"守りを　捨てて　相手の　ふところに
+突撃する。自分の
+防御と　特防が　さがる。"
+370,16,1,"まもりを　すてて　あいての　ふところに
+とつげきする。じぶんの
+ぼうぎょと　とくぼうが　さがる。"
+370,16,3,"방어를 포기하고 상대 깊숙이
+돌격한다. 자신의
+방어와 특수방어가 떨어진다."
+370,16,5,"Le lanceur combat au corps à corps sans se
+protéger. Baisse aussi sa Défense et sa Défense
+Spéciale."
+370,16,6,"Nahkampf-Attacke ohne Rücksicht auf Verluste.
+Senkt Verteidigung und Spezial-Verteidigung
+des Anwenders."
+370,16,7,"Lucha abiertamente contra el objetivo sin protegerse. 
+También reduce la Defensa y la Defensa Especial del 
+usuario."
+370,16,8,"Chi la usa attacca abbassando la guardia.
+La propria Difesa e la Difesa Speciale si riducono."
+370,16,9,"The user fights the target up close
+without guarding itself. This also lowers
+the user’s Defense and Sp. Def stats."
+370,16,11,"守りを　捨てて　相手の　ふところに
+突撃する。自分の
+防御と　特防が　さがる。"
+488,11,5,"Le lanceur s’entoure de flammes pour
+attaquer l’ennemi. Il se concentre
+et sa Vitesse augmente."
+488,11,9,"The user cloaks itself with flame and
+attacks. Building up more power,
+it raises the user’s Speed stat."
+488,14,9,"The user cloaks itself with flame and
+attacks. Building up more power,
+it raises the user’s Speed stat."
+488,15,1,"ほのおを　まとい　あいてを
+こうげきする。ちからを　ためて　じぶんの
+すばやさを　あげる。"
+488,15,3,"불꽃을 둘러 상대를 공격한다.
+힘을 모아서 자신의
+스피드를 올린다."
+488,15,5,"Le lanceur s’entoure de flammes pour attaquer
+l’ennemi. Il se concentre et sa Vitesse augmente."
+488,15,6,"Anwender hüllt sich in Flammen und
+greift das Ziel an. Sammelt seine Energie
+und erhöht dadurch die eigene Initiative."
+488,15,7,"Llamas que golpean al objetivo y aumentan la
+Velocidad del atacante."
+488,15,8,"Chi la usa si copre di fuoco e attacca il bersaglio.
+Concentrandosi aumenta, inoltre, la propria
+Velocità."
+488,15,9,"Cloaking itself in flame, the user attacks.
+Then, building up more power,
+the user raises its Speed stat."
+488,15,11,"炎を　まとい　相手を　攻撃する。
+力を　ためて　自分の
+素早さを　あげる。"
+488,16,1,"ほのおを　まとい　あいてを
+こうげきする。ちからを　ためて　じぶんの
+すばやさを　あげる。"
+488,16,3,"불꽃을 둘러 상대를 공격한다.
+힘을 모아서 자신의
+스피드를 올린다."
+488,16,5,"Le lanceur s’entoure de flammes pour attaquer
+l’ennemi. Il se concentre et sa Vitesse augmente."
+488,16,6,"Anwender hüllt sich in Flammen und
+greift das Ziel an. Sammelt seine Energie
+und erhöht dadurch die eigene Initiative."
+488,16,7,"Llamas que golpean al objetivo y aumentan la 
+Velocidad del atacante."
+488,16,8,"Chi la usa si copre di fuoco e attacca il bersaglio.
+Concentrandosi aumenta, inoltre, la propria
+Velocità."
+488,16,9,"Cloaking itself in flame, the user attacks.
+Then, building up more power,
+the user raises its Speed stat."
+488,16,11,"炎を　まとい　相手を　攻撃する。
+力を　ためて　自分の
+素早さを　あげる。"
+564,15,1,"あいての　まわりに　ねばねばした
+ネットを　はりめぐらせ　こうたいで
+でてきた　あいての　すばやさを　さげる。"
+564,15,3,"상대의 주위에 끈적끈적한
+네트를 둘러 펼쳐 교체되어
+나온 상대의 스피드를 떨어뜨린다."
+564,15,5,"Déploie une toile visqueuse autour de l’ennemi
+qui ralentit la Vitesse de tout adversaire entrant
+au combat."
+564,15,6,"Der Anwender spinnt in der Umgebung des
+gegnerischen Teams ein klebriges Netz und senkt
+so die Initiative neu eingewechselter Pokémon."
+564,15,7,"Coloca una red pegajosa alrededor del equipo
+rival, haciendo que baje la Velocidad de cualquier
+Pokémon adversario que entre al combate."
+564,15,8,"Chi la usa intreccia una rete appiccicosa attorno
+alla squadra avversaria, diminuendo la Velocità dei
+Pokémon nemici che entreranno in campo."
+564,15,9,"The user weaves a sticky net around
+the opposing team, which lowers their
+Speed stat upon switching into battle."
+564,15,11,"相手の　周りに　ねばねばした
+ネットを　はりめぐらせ　交代で
+でてきた　相手の　素早さを　さげる。"
+564,16,1,"あいての　まわりに　ねばねばした
+ネットを　はりめぐらせ　こうたいで
+でてきた　あいての　すばやさを　さげる。"
+564,16,3,"상대의 주위에 끈적끈적한
+네트를 둘러 펼쳐 교체되어
+나온 상대의 스피드를 떨어뜨린다."
+564,16,5,"Déploie une toile visqueuse autour de l’ennemi
+qui ralentit la Vitesse de tout adversaire entrant
+au combat."
+564,16,6,"Der Anwender spinnt in der Umgebung des
+gegnerischen Teams ein klebriges Netz und senkt
+so die Initiative neu eingewechselter Pokémon."
+564,16,7,"Coloca una red pegajosa alrededor del equipo rival, 
+haciendo que baje la Velocidad de cualquier Pokémon
+adversario que entre al combate."
+564,16,8,"Chi la usa intreccia una rete appiccicosa attorno
+alla squadra avversaria, diminuendo la Velocità dei
+Pokémon nemici che entreranno in campo."
+564,16,9,"The user weaves a sticky net around
+the opposing team, which lowers their
+Speed stat upon switching into battle."
+564,16,11,"相手の　周りに　ねばねばした
+ネットを　はりめぐらせ　交代で
+でてきた　相手の　素早さを　さげる。"
+14,3,9,"A dance that in­
+creases ATTACK."
+14,4,9,"A dance that in­
+creases ATTACK."
+14,5,9,"A fighting dance that
+sharply raises ATTACK."
+14,6,9,"A fighting dance that
+sharply raises ATTACK."
+14,7,9,"A frenetic dance of
+fighting. It sharply
+raises the ATTACK
+stat."
+14,8,9,"A frenetic dance to
+uplift the fighting
+spirit. It sharply
+raises the user’s
+Attack stat."
+14,9,9,"A frenetic dance to
+uplift the fighting
+spirit. It sharply
+raises the user’s
+Attack stat."
+14,10,9,"A frenetic dance to
+uplift the fighting
+spirit. It sharply
+raises the user’s
+Attack stat."
+14,11,5,"Danse frénétique qui exalte l’esprit
+combatif. Augmente beaucoup
+l’Attaque du lanceur."
+14,11,9,"A frenetic dance to uplift the fighting
+spirit. It sharply raises the user’s
+Attack stat."
+14,14,9,"A frenetic dance to uplift the fighting
+spirit. It sharply raises the user’s
+Attack stat."
+14,15,1,"たたかいのまいを　はげしく　おどって
+きあいを　たかめる。
+じぶんの　こうげきを　ぐーんと　あげる。"
+14,15,3,"싸움의 춤을 격렬하게 추며
+기세를 높인다.
+자신의 공격을 크게 올린다."
+14,15,5,"Danse frénétique qui exalte l’esprit combatif.
+Augmente beaucoup l’Attaque du lanceur."
+14,15,6,"Ein wilder Kampftanz, der den eigenen
+Angriffs-Wert stark erhöht."
+14,15,7,Baile frenético que aumenta mucho el Ataque.
+14,15,8,"Danza frenetica che incrementa lo spirito
+combattivo. Chi la usa aumenta di molto
+il suo Attacco."
+14,15,9,"A frenetic dance to uplift the fighting
+spirit. This sharply raises the user’s
+Attack stat."
+14,15,11,"戦いの舞を　激しく　おどって
+気合を　高める。
+自分の　攻撃を　ぐーんと　あげる。"
+14,16,1,"たたかいのまいを　はげしく　おどって
+きあいを　たかめる。
+じぶんの　こうげきを　ぐーんと　あげる。"
+14,16,3,"싸움의 춤을 격렬하게 추며
+기세를 높인다.
+자신의 공격을 크게 올린다."
+14,16,5,"Danse frénétique qui exalte l’esprit combatif.
+Augmente beaucoup l’Attaque du lanceur."
+14,16,6,"Ein wilder Kampftanz, der den eigenen
+Angriffs-Wert stark erhöht."
+14,16,7,Baile frenético que aumenta mucho el Ataque.
+14,16,8,"Danza frenetica che incrementa lo spirito
+combattivo. Chi la usa aumenta di molto
+il suo Attacco."
+14,16,9,"A frenetic dance to uplift the fighting
+spirit. This sharply raises the user’s
+Attack stat."
+14,16,11,"戦いの舞を　激しく　おどって
+気合を　高める。
+自分の　攻撃を　ぐーんと　あげる。"

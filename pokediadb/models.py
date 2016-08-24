@@ -15,6 +15,23 @@ db = SqliteDatabase(None)
 
 
 class BaseModel(Model):
+
+    def __eq__(self, other):
+        if isinstance(other, self.__class__):
+            return self.__dict__["_data"] == other.__dict__["_data"]
+        else:
+            return False
+
+    def __str__(self):
+        string = type(self).__name__ + ": {"
+        for attr, value in self._data.items():
+            string += "{}: {}, ".format(attr, value)
+
+        return string[:-2] + "}"
+
+    def __repr__(self):
+        return str(self)
+
     class Meta:
         database = db
 
@@ -22,6 +39,15 @@ class BaseModel(Model):
 class Language(BaseModel):
     name = CharField(max_length=15)
     code = FixedCharField(max_length=2)
+
+    def __lt__(self, other):
+        return self.id < other.id
+
+
+class DamageClass(BaseModel):
+    id = IntegerField(primary_key=True)
+    name = CharField(max_length=15)
+    image = CharField(max_length=20)
 
 
 # =========================================================================== #
@@ -98,7 +124,7 @@ class Move(BaseModel):
     pp = IntegerField()
     accuracy = IntegerField()
     priority = IntegerField()
-    damage_class = CharField(max_length=10)
+    damage_class = ForeignKeyField(DamageClass)
 
 
 class MoveTranslation(BaseModel):

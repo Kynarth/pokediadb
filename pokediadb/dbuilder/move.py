@@ -45,7 +45,7 @@ def get_moves(csv_dir):
                     ),
                     "power": power, "pp": pp,
                     "accuracy": accuracy, "priority": int(row[7]),
-                    "damage_class": row[9]
+                    "damage_class": models.DamageClass.get(id=int(row[9]))
                 }
             except ValueError as err:
                 log.error((
@@ -117,4 +117,4 @@ def update_move_effects(csv_dir, pkm_move_trans, languages):
         for row in reader:
             if row[1] == "16" and int(row[2]) in languages:
                 data_id = "{}-{}".format(row[0], row[2])
-                pkm_move_trans[data_id]["effect"] = row[3]
+                pkm_move_trans[data_id]["effect"] = row[3].replace("\n", " ")

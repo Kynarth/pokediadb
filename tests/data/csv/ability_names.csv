@@ -2,22 +2,35 @@ ability_id,local_language_id,name
 1,5,Puanteur
 1,6,Duftnote
 1,9,Stench
-2,5,Crachin
-2,9,Drizzle
-3,5,Turbo
-3,9,Speed Boost
-4,5,Armurbaston
-4,9,Battle Armor
 34,5,Chlorophylle
 34,9,Chlorophyll
 34,1,ようりょくそ
-65,5,Engrais
-65,9,Overgrow
-66,5,Brasier
-66,9,Blaze
 94,5,Force Soleil
 94,7,Poder Solar
 94,9,Solar Power
+159,1,すなのちから
+159,3,모래의힘
+159,5,Force Sable
+159,6,Sandgewalt
+159,7,Poder Arena
+159,8,Silicoforza
+159,9,Sand Force
+170,5,Magicien
+170,9,Magician
+65,1,しんりょく
+65,3,심록
+65,5,Engrais
+65,6,Notdünger
+65,7,Espesura
+65,8,Erbaiuto
+65,9,Overgrow
+66,1,もうか
+66,3,맹화
+66,5,Brasier
+66,6,Großbrand
+66,7,Mar Llamas
+66,8,Aiutofuoco
+66,9,Blaze
 10058,9,Shackle
 10059,9,Decoy
 10060,9,Shield

@@ -1,19 +1,20 @@
 move_id,local_language_id,name
 1,5,Écras'Face
 1,9,Pound
-1,7,Destructor
-2,5,Poing-Karaté
-2,9,Karate Chop
-4,5,Poing Comète
-4,9,Comet Punch
-5,5,Ultimapoing
-5,9,Mega Punch
-5,6,Megahieb
-19,5,Vol
-19,9,Fly
-17,9,Wing Attack
-17,5,Cru-Aile
-17,1,つばさでうつ
+14,5,Danse-Lames
+14,9,Swords Dance
+218,5,Frustration
+218,9,Frustration
+287,5,Régénération
+287,9,Refresh
+370,9,Close Combat
+370,5,Close Combat
+488,3,니트로차지
+488,5,Nitrocharge
+488,9,Flame Charge
+564,9,Sticky Web
+564,5,Toile Gluante
+564,8,Rete Vischiosa
 10001,1,ダークラッシュ
 10001,5,Charge Noire
 10001,6,Cryptoschlag
