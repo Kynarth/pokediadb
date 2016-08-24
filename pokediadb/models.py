@@ -22,15 +22,10 @@ class BaseModel(Model):
         else:
             return False
 
-    def __str__(self):
+    def __repr__(self):
         string = type(self).__name__ + ": {"
         for attr, value in self._data.items():
             string += "{}: {}, ".format(attr, value)
-
-        return string[:-2] + "}"
-
-    def __repr__(self):
-        return str(self)
 
     class Meta:
         database = db
