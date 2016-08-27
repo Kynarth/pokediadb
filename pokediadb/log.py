@@ -1,6 +1,6 @@
 """Module to display different kind of messages in the terminal."""
 
-import os
+import shutil
 import textwrap
 
 import click
@@ -19,10 +19,7 @@ def format_message(msg, msg_type):
         str: Return formatted message.
 
     """
-    try:
-        term_size = os.get_terminal_size()
-    except OSError:
-        term_size = os.terminal_size((80, 24))
+    term_size = shutil.get_terminal_size()
     return textwrap.fill(
         msg, width=term_size.columns, initial_indent="",
         subsequent_indent=" " * len(msg_type.value)
