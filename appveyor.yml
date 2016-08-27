@@ -2,8 +2,8 @@ build: off
 
 environment:
   matrix:
-    - PYTHON "C:\\Python35"
-    - PYTHON "C:\\Python35-x64"
+    - PYTHON: "C:\\Python35"
+    - PYTHON: "C:\\Python35-x64"
 
 install:
   - "%PYTHON%/Scripts/pip.exe -m pip install -U pip"
