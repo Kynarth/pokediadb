@@ -3,12 +3,17 @@ build: off
 environment:
   matrix:
     - PYTHON: "C:\\Python35"
+      PYTHON_VERSION: "3.5.2"
+      PYTHON_ARCH: "32"
     - PYTHON: "C:\\Python35-x64"
+      PYTHON_VERSION: "3.5.2"
+      PYTHON_ARCH: "64"
 
 install:
-  - "%PYTHON%/Scripts/pip.exe pip install -U pip"
-  - "%PYTHON%/Scripts/pip.exe pip install -r requirements.txt"
-  - "%PYTHON%/Scripts/pip.exe pip install pytest"
+  - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
+  - "pip install --disable-pip-version-check --user --upgrade pip"
+  - "pip install -r requirements.txt"
+  - "pip install pytest"
 
 test_script:
-  - "%PYTHON%/Scripts/py.test -s tests"
+  - "py.test -s tests"
