@@ -20,6 +20,7 @@ def format_message(msg, msg_type):
 
     """
     term_size = shutil.get_terminal_size()
+    print("TERMINAL SIZE:", term_size.columns)
     return textwrap.fill(
         msg, width=term_size.columns, initial_indent="",
         subsequent_indent=" " * len(msg_type.value)
