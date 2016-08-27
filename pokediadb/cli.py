@@ -72,10 +72,20 @@ def download(path, verbose):
 
     # Clone pokeapi repository
     log.info("Cloning pokeapi repository", verbose)
-    subprocess.run([
-        "git", "clone", "-q", "https://github.com/PokeAPI/pokeapi.git",
-        str(pokeapi_dir)
-    ])
+    try:
+        subprocess.run([
+            "git", "clone", "-q", "https://github.com/PokeAPI/pokeapi.git",
+            str(pokeapi_dir)
+        ])
+    except OSError as e:
+        if e.errno == shutil.errno.ENOENT:
+            log.error((
+                "Git must be installed on your system to download data from "
+                "https://github.com/PokeAPI/pokeapi."
+            ))
+        else:
+            # Something else went wrong while trying to run `wget`
+            raise
 
     # Extract csv and sprites folders in the given path directory and remove
     # pokeapi repository
