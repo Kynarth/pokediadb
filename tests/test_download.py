@@ -68,10 +68,8 @@ def test_dl_pokedia_repo_in_a_folder_already_containing_a_csv_directory(
         runner, tmp_context):
     csv = tmp_context.join("csv").mkdir()
     result = runner.invoke(pokediadb, ["download", tmp_context.strpath])
-    print()
-    print(result.output)
     assert result.exit_code == 1
-    assert log.error(
+    assert (
         "Dir: {} contains a csv or sprites directory!".format(tmp_context)
-    ) in result.output
+    ).replace("\n", "") in result.output.replace("\n", "")
     assert csv.check(dir=1)
