@@ -1,0 +1,14 @@
+build: off
+
+environment:
+  matrix:
+    - PYTHON "C:\\Python35"
+    - PYTHON "C:\\Python35-x64"
+
+install:
+  - "%PYTHON%/Scripts/pip.exe -m pip install -U pip"
+  - "%PYTHON%/Scripts/pip.exe -m pip install -r requirements.txt"
+  - "%PYTHON%/Scripts/pip.exe -m pip install pytest"
+
+test_script:
+  - "%PYTHON%/Scripts/py.test -s tests"
