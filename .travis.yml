@@ -8,16 +8,12 @@ env:
 install:
   - pip install -r requirements.txt
   - pip install tox
-  - pip install codeclimate-test-reporter
   - pip install codacy-coverage
 
 script:
   - tox
 
 after_success:
-  # Code Climate coverage
-  - codeclimate-test-reporter --token $CODE_CLIMATE
-
   # Codacy coverage
   - coverage xml
   - python-codacy-coverage -r coverage.xml

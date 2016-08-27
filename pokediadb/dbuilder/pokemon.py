@@ -18,7 +18,7 @@ def get_pokemons(csv_dir):
 
     """
     pkms = {}
-    with (csv_dir / "pokemon.csv").open() as f_pkm:
+    with (csv_dir / "pokemon.csv").open(encoding="utf8") as f_pkm:
         reader = csv.reader(f_pkm)
         next(reader)  # Skip header
 
@@ -54,7 +54,7 @@ def get_pokemon_abilities(csv_dir, pkms):
 
     """
     pkm_abilities = []
-    with (csv_dir / "pokemon_abilities.csv").open() as f_pkm_ab:
+    with (csv_dir / "pokemon_abilities.csv").open(encoding="utf8") as f_pkm_ab:
         reader = csv.reader(f_pkm_ab)
         next(reader)  # Skip header
 
@@ -93,7 +93,8 @@ def get_pokemon_trans(csv_dir, pkms, languages):
 
     """
     pkm_trans = []
-    with (csv_dir / "pokemon_species_names.csv").open() as f_pkm_trans:
+    with (csv_dir / "pokemon_species_names.csv").open(
+            encoding="utf8") as f_pkm_trans:
         reader = csv.reader(f_pkm_trans)
         next(reader)  # Skip header
 

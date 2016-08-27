@@ -17,7 +17,7 @@ def test_database_generation_without_args(runner, tmp_context):
     assert tmp_context.join("sprites").check(dir=1)
 
     # Check type tables
-    db = SqliteDatabase(str(db_file))
+    db = SqliteDatabase(db_file.strpath)
     db.connect()
     assert len(Type.select()) == 18
     assert len(TypeEfficacy.select()) == 324

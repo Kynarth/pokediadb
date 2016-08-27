@@ -16,7 +16,7 @@ def get_abilities(csv_dir):
 
     """
     pkm_abilities = {}
-    with (csv_dir / "abilities.csv").open() as f_ability:
+    with (csv_dir / "abilities.csv").open(encoding="utf8") as f_ability:
         reader = csv.reader(f_ability)
         next(reader)  # Skip header
 
@@ -50,7 +50,7 @@ def get_ability_names(csv_dir, pkm_abilities, languages):
 
     """
     pkm_ability_trans = {}  # Contains all fields needing translations
-    with (csv_dir / "ability_names.csv").open() as f_ab_name:
+    with (csv_dir / "ability_names.csv").open(encoding="utf8") as f_ab_name:
         reader = csv.reader(f_ab_name)
         next(reader)  # Skip header
 
@@ -87,7 +87,8 @@ def update_ability_effects(csv_dir, pkm_ability_trans, languages):
         FileNotFoundError:: Raised if ability_flavor_text.csv does not exist.
 
     """
-    with (csv_dir / "ability_flavor_text.csv").open() as f_ab_eff:
+    with (csv_dir / "ability_flavor_text.csv").open(
+            encoding="utf8") as f_ab_eff:
         reader = csv.reader(f_ab_eff)
         next(reader)  # Skip header
 

@@ -12,6 +12,7 @@ import click
 
 from pokediadb import log
 from pokediadb import database as pdb
+from pokediadb.utils import on_rmtree_error
 
 
 def validate_dbname(ctx, params, value):
@@ -88,15 +89,15 @@ def download(path, verbose):
     except FileNotFoundError as err:  # pragma: no cover
         log.error(err)
         if csv.exists():
-            shutil.rmtree(str(csv))
+            shutil.rmtree(str(csv), onerror=on_rmtree_error)
 
         if sprites.exists():
-            shutil.rmtree(str(sprites))
+            shutil.rmtree(str(sprites), onerror=on_rmtree_error)
 
-        shutil.rmtree(str(pokeapi_dir))
+        shutil.rmtree(str(pokeapi_dir), onerror=on_rmtree_error)
         raise click.Abort()
     finally:
-        shutil.rmtree(str(pokeapi_dir))
+        shutil.rmtree(str(pokeapi_dir), onerror=on_rmtree_error)
 
 
 @pokediadb.command(short_help="Generate PKM sqlite database.")

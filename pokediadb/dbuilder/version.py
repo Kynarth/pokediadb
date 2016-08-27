@@ -16,7 +16,7 @@ def get_versions(csv_dir):
 
     """
     pkm_versions = []
-    with (csv_dir / "versions.csv").open() as f_version:
+    with (csv_dir / "versions.csv").open(encoding="utf8") as f_version:
         reader = csv.reader(f_version)
         next(reader)  # Skip header
 
@@ -41,7 +41,7 @@ def get_version_groups(csv_dir, pkm_versions):
         FileNotFoundError: Raised if version_groups.csv does not exist.
 
     """
-    with (csv_dir / "version_groups.csv").open() as f_v_group:
+    with (csv_dir / "version_groups.csv").open(encoding="utf8") as f_v_group:
         reader = csv.reader(f_v_group)
         next(reader)  # Skip header
 
@@ -71,7 +71,7 @@ def get_version_names(csv_dir, pkm_versions, languages):
         FileNotFoundError: Raised if version_names.csv does not exist.
 
     """
-    with (csv_dir / "version_names.csv").open() as f_v_name:
+    with (csv_dir / "version_names.csv").open(encoding="utf8") as f_v_name:
         reader = csv.reader(f_v_name)
         next(reader)  # Skip header
 

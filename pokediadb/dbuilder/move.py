@@ -1,8 +1,6 @@
 import csv
 
-import click
 
-from pokediadb import log
 from pokediadb import models
 
 
@@ -22,7 +20,7 @@ def get_moves(csv_dir):
 
     """
     pkm_moves = {}
-    with (csv_dir / "moves.csv").open() as f_move:
+    with (csv_dir / "moves.csv").open(encoding="utf8") as f_move:
         reader = csv.reader(f_move)
         next(reader)  # Skip header
 
@@ -37,23 +35,15 @@ def get_moves(csv_dir):
             pp = int(row[5]) if row[5] != "" else 0
             accuracy = int(row[6]) if row[6] != "" else 0
 
-            try:
-                pkm_moves[move_id] = {
-                    "id": move_id, "generation": int(row[2]),
-                    "type": models.Type.get(
-                        models.Type.id == int(row[3])
-                    ),
-                    "power": power, "pp": pp,
-                    "accuracy": accuracy, "priority": int(row[7]),
-                    "damage_class": models.DamageClass.get(id=int(row[9]))
-                }
-            except ValueError as err:
-                log.error((
-                    "An error occured while reading moves.csv"
-                    "Row: {}".format(row)
-                ))
-                log.error(str(err))
-                raise click.Abort()
+            pkm_moves[move_id] = {
+                "id": move_id, "generation": int(row[2]),
+                "type": models.Type.get(
+                    models.Type.id == int(row[3])
+                ),
+                "power": power, "pp": pp,
+                "accuracy": accuracy, "priority": int(row[7]),
+                "damage_class": models.DamageClass.get(id=int(row[9]))
+            }
 
     return pkm_moves
 
@@ -75,7 +65,7 @@ def get_move_names(csv_dir, pkm_moves, languages):
 
     """
     pkm_move_trans = {}
-    with (csv_dir / "move_names.csv").open() as f_move_name:
+    with (csv_dir / "move_names.csv").open(encoding="utf8") as f_move_name:
         reader = csv.reader(f_move_name)
         next(reader)  # Skip header
 
@@ -110,7 +100,8 @@ def update_move_effects(csv_dir, pkm_move_trans, languages):
         FileNotFoundError: Raised if move_flavor_text.csv does not exist.
 
     """
-    with (csv_dir / "move_flavor_text.csv").open() as f_move_eff:
+    with (csv_dir / "move_flavor_text.csv").open(
+            encoding="utf8") as f_move_eff:
         reader = csv.reader(f_move_eff)
         next(reader)  # Skip header
 

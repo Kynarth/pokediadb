@@ -16,7 +16,7 @@ def get_types(csv_dir):
 
     """
     pkm_types = {}
-    with (csv_dir / "types.csv").open() as f_type:
+    with (csv_dir / "types.csv").open(encoding="utf8") as f_type:
         reader = csv.reader(f_type)
         next(reader)  # Skip header
 
@@ -48,7 +48,7 @@ def get_type_efficacies(csv_dir, pkm_types):
 
     """
     pkm_type_eff = []
-    with (csv_dir / "type_efficacy.csv").open() as f_type_eff:
+    with (csv_dir / "type_efficacy.csv").open(encoding="utf8") as f_type_eff:
         reader = csv.reader(f_type_eff)
         next(reader)  # Skip header
 
@@ -79,7 +79,7 @@ def get_type_names(csv_dir, pkm_types, languages):
 
     """
     pkm_type_names = []
-    with (csv_dir / "type_names.csv").open() as f_type_name:
+    with (csv_dir / "type_names.csv").open(encoding="utf8") as f_type_name:
         reader = csv.reader(f_type_name)
         next(reader)  # Skip header
 
