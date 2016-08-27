@@ -16,4 +16,4 @@ install:
   - "pip install pytest"
 
 test_script:
-  - "py.test -s tests"
+  - "py.test -vvs tests"
