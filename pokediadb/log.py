@@ -19,9 +19,10 @@ def format_message(msg, msg_type):
         str: Return formatted message.
 
     """
-    print("Try get term-size")
-    term_size = os.get_terminal_size()
-    print("Term-size:", term_size)
+    try:
+        term_size = os.get_terminal_size()
+    except OSError:
+        term_size = os.terminal_size((80, 24))
     return textwrap.fill(
         msg, width=term_size.columns, initial_indent="",
         subsequent_indent=" " * len(msg_type.value)
@@ -45,9 +46,7 @@ def info(msg, verbose=True):
     click.secho(Log.INFO.value, fg="green", bold=True, nl=False)
 
     full_msg = Log.INFO.value + msg
-    print("Try format message")
     msg = format_message(full_msg, Log.INFO)[len(Log.INFO.value):]
-    print("Message formated")
     click.secho(msg, fg="green")
 
     return full_msg
