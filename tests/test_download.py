@@ -7,7 +7,6 @@ from pokediadb.cli import pokediadb
 def test_dl_pokedia_repo_with_correct_folder_path(runner, tmp_context):
     directory = tmp_context.mkdir("pokeapi_test")
     result = runner.invoke(pokediadb, ["download", "-v", directory.strpath])
-    print(result.output)
     assert result.exit_code == 0
 
     assert not directory.join("pokeapi").check()

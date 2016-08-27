@@ -59,17 +59,14 @@ def download(path, verbose):
     # Create a pokeapi directory to clone the repository into
     path = Path(path).absolute()
     try:
-        print("Make pokeapi directory")
         pokeapi_dir = path / "pokeapi"
         pokeapi_dir.mkdir()
-        print("Done")
     except FileExistsError:
         log.error("A pokeapi folder already exists in {}".format(path))
         raise click.Abort()
 
     # Check if there is no csv nor sprites folders in the given directory
     if (path / "csv").exists() or (path / "sprites").exists():
-        print("CSV or Sprite dir already exist")
         log.error("Dir: {} contains a csv or sprites directory!".format(path))
         raise click.Abort()
 
@@ -87,25 +84,19 @@ def download(path, verbose):
     sprites = pokeapi_dir / "data/v2/sprites"
 
     try:
-        print("Move csv dir")
         shutil.move(str(csv), str(pokeapi_dir.parent))
-        print("Move sprite dir")
         shutil.move(str(sprites), str(pokeapi_dir.parent))
     except FileNotFoundError as err:  # pragma: no cover
         log.error(err)
         if csv.exists():
-            print("Remove csv")
             shutil.rmtree(str(csv), onerror=on_rmtree_error)
 
         if sprites.exists():
-            print("Remove sprites")
             shutil.rmtree(str(sprites), onerror=on_rmtree_error)
 
-        print("remove pokeapi")
         shutil.rmtree(str(pokeapi_dir), onerror=on_rmtree_error)
         raise click.Abort()
     finally:
-        print("remove pokeapi")
         shutil.rmtree(str(pokeapi_dir), onerror=on_rmtree_error)
 
 
