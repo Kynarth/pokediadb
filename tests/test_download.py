@@ -1,7 +1,7 @@
 from py.path import local
 
-from pokediadb import log
 from pokediadb.cli import pokediadb
+from pokediadb.tests import check_output
 
 
 def test_dl_pokedia_repo_with_correct_folder_path(runner, tmp_context):
@@ -28,7 +28,7 @@ def test_dl_pokedia_repo_with_correct_folder_path(runner, tmp_context):
 def test_dl_pokedia_repo_with_incorrect_folder_path(runner):
     nonexistent_dir = local("/incorrect_path/684546")
     result = runner.invoke(pokediadb, ["download", nonexistent_dir.strpath])
-    assert 'Error: Invalid value for "path"' in result.output
+    assert check_output(result.output, 'Error: Invalid value for "path"')
     assert result.exit_code == 2
 
     assert not nonexistent_dir.join("pokeapi").check()
@@ -58,7 +58,7 @@ def test_dl_pokedia_repo_in_a_folder_already_containing_a_pokeapi_directory(
     tmp_context.join("pokeapi").mkdir()
     result = runner.invoke(pokediadb, ["download", str(tmp_context)])
     assert result.exit_code == 1
-    assert log.error("A pokeapi folder already exists") in result.output
+    assert check_output(result.output, "A pokeapi folder already exists")
 
     assert not tmp_context.join("csv").check()
     assert not tmp_context.join("sprites").check()
@@ -69,7 +69,8 @@ def test_dl_pokedia_repo_in_a_folder_already_containing_a_csv_directory(
     csv = tmp_context.join("csv").mkdir()
     result = runner.invoke(pokediadb, ["download", tmp_context.strpath])
     assert result.exit_code == 1
-    assert (
+    assert check_output(
+        result.output,
         "Dir: {} contains a csv or sprites directory!".format(tmp_context)
-    ).replace("\n", "") in result.output.replace("\n", "")
+    )
     assert csv.check(dir=1)

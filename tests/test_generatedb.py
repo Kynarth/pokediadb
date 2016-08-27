@@ -2,6 +2,7 @@ from peewee import SqliteDatabase
 from py.path import local
 
 from pokediadb.cli import pokediadb
+from pokediadb.tests import check_output
 from pokediadb.models import Type, TypeEfficacy, TypeTranslation
 
 
@@ -52,9 +53,10 @@ def test_database_generation_with_existent_sql_file(runner, tmp_context):
     tmp_context.join("data/test_data.sql").copy(sql_file)
     result = runner.invoke(pokediadb, ["generate", "-v"])
     assert result.exit_code == 1
-    assert (
+    assert check_output(
+        result.output,
         "The database '{}' already exist.".format(sql_file.strpath)
-    ).replace("\n", "") in result.output.replace("\n", "")
+    )
 
 
 def test_database_generation_with_invalid_names(runner):
