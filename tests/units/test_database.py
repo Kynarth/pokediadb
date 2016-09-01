@@ -27,15 +27,16 @@ def test_database_initialization_with_incorrect_path(tmp_context):
 
     with pytest.raises(peewee.OperationalError) as err_info:
         _, _ = db_init(str(db_file))
-    assert str(err_info.value) == "unable to open database file"
+    err_info.match(r"unable to open database file")
 
 
 def test_database_initialization_with_already_existing_file(tmp_context):
     db_file = tmp_context.join("data/test_data.sql")
     with pytest.raises(FileExistsError) as err_info:
         _, _ = db_init(db_file.strpath)
-    assert str(err_info.value) == "The database '{}' already exist.".format(
-        db_file.strpath)
+    err_info.match(
+        r"The database '{}' already exist.".format(db_file.strpath)
+    )
 
 
 def test_pokemon_versions_data_collection(tmp_context, db, version_test_data):

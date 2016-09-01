@@ -10,13 +10,6 @@ from pokediadb.enums import Lang
 
 # pylint: disable=W0621
 
-
-@pytest.fixture
-def runner():
-    """Allow invoking command as command line scripts in isolation."""
-    return CliRunner()
-
-
 @pytest.yield_fixture(autouse=True)
 def tmp_context():
     """Create an isolated file system for tests with its test data."""

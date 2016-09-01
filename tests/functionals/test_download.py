@@ -28,8 +28,8 @@ def test_dl_pokedia_repo_with_correct_folder_path(runner, tmp_context):
 def test_dl_pokedia_repo_with_incorrect_folder_path(runner):
     nonexistent_dir = local("/incorrect_path/684546")
     result = runner.invoke(pokediadb, ["download", nonexistent_dir.strpath])
-    assert check_output(result.output, 'Error: Invalid value for "path"')
     assert result.exit_code == 2
+    assert check_output(result.output, 'Error: Invalid value for "path"')
 
     assert not nonexistent_dir.join("pokeapi").check()
     assert not nonexistent_dir.join("csv").check()

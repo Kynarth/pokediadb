@@ -41,6 +41,41 @@ def validate_dbname(ctx, params, value):
     return value
 
 
+def extract_dirs(pokeapi_dir):
+    """Extract csv and sprite dirs from pokeapi repository.
+
+    Extract csv and sprites folders in the given path directory and remove
+    pokeapi repository.
+
+    Args:
+        pokeapi_dir (pathlib.Path): Path to the downloaded pokeapi repo.
+
+    Raises:
+        click.Abort: Raised if there is no csv or sprites folder inside the
+            pokeapi repository.
+
+    """
+    log.info("Extracting csv and sprites folders.")
+    csv = pokeapi_dir / "data/v2/csv"
+    sprites = pokeapi_dir / "data/v2/sprites"
+
+    try:
+        shutil.move(str(csv), str(pokeapi_dir.parent))
+        shutil.move(str(sprites), str(pokeapi_dir.parent))
+    except FileNotFoundError as err:  # pragma: no cover
+        log.error(err)
+        if csv.exists():
+            shutil.rmtree(str(csv), onerror=on_rmtree_error)
+
+        if sprites.exists():
+            shutil.rmtree(str(sprites), onerror=on_rmtree_error)
+
+        shutil.rmtree(str(pokeapi_dir), onerror=on_rmtree_error)
+        raise click.Abort()
+    finally:
+        shutil.rmtree(str(pokeapi_dir), onerror=on_rmtree_error)
+
+
 @click.group()
 def pokediadb():
     pass
@@ -77,8 +112,8 @@ def download(path, verbose):
             "git", "clone", "-q", "https://github.com/PokeAPI/pokeapi.git",
             str(pokeapi_dir)
         ])
-    except OSError as e:
-        if e.errno == shutil.errno.ENOENT:
+    except OSError as err:
+        if err.errno == shutil.errno.ENOENT:
             log.error((
                 "Git must be installed on your system to download data from "
                 "https://github.com/PokeAPI/pokeapi."
@@ -87,27 +122,7 @@ def download(path, verbose):
             # Something else went wrong while trying to run `wget`
             raise
 
-    # Extract csv and sprites folders in the given path directory and remove
-    # pokeapi repository
-    log.info("Extracting csv and sprites folders.")
-    csv = pokeapi_dir / "data/v2/csv"
-    sprites = pokeapi_dir / "data/v2/sprites"
-
-    try:
-        shutil.move(str(csv), str(pokeapi_dir.parent))
-        shutil.move(str(sprites), str(pokeapi_dir.parent))
-    except FileNotFoundError as err:  # pragma: no cover
-        log.error(err)
-        if csv.exists():
-            shutil.rmtree(str(csv), onerror=on_rmtree_error)
-
-        if sprites.exists():
-            shutil.rmtree(str(sprites), onerror=on_rmtree_error)
-
-        shutil.rmtree(str(pokeapi_dir), onerror=on_rmtree_error)
-        raise click.Abort()
-    finally:
-        shutil.rmtree(str(pokeapi_dir), onerror=on_rmtree_error)
+    extract_dirs(pokeapi_dir)
 
 
 @pokediadb.command(short_help="Generate PKM sqlite database.")
@@ -123,7 +138,7 @@ def generate(ctx, path, name, verbose):
     csv_path = dir_path / "csv"
 
     # Database initialization
-    log.info("Initializating {}".format(name), verbose)
+    log.info("Initialing {}".format(name), verbose)
     try:
         db, languages = pdb.db_init(str(file_path))
     except FileExistsError as err:
