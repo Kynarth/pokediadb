@@ -35,7 +35,8 @@ def test_database_initialization_with_already_existing_file(tmp_context):
     with pytest.raises(FileExistsError) as err_info:
         _, _ = db_init(db_file.strpath)
     err_info.match(
-        r"The database '{}' already exist.".format(db_file.strpath)
+        r"The database '{}' already exist.".format(
+            db_file.strpath.replace("\\", r"\\"))
     )
 
 

@@ -5,7 +5,7 @@ import sqlite3
 import click
 
 
-def max_sql_variables():
+def max_sql_variables():  # pragma: no cover
     """Get the maximum number of arguments allowed in a query by the current
     sqlite3 implementation.
 
@@ -41,7 +41,7 @@ def max_sql_variables():
     return low
 
 
-def on_rmtree_error(func, path, _):
+def on_rmtree_error(func, path, _):  # pragma: no cover
     """
     Error handler for ``shutil.rmtree``.
 
